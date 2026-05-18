@@ -1,0 +1,284 @@
+[2026-04-16 14:05:43,275] INFO in app: ============== 系统启动 ==============
+[2026-04-16 14:05:43,831] INFO in app: ✅ Excel 加载成功：114 条规则
+[2026-04-16 14:05:43,890] INFO in app: ✅ 数据库表检查完成
+[2026-04-16 14:05:43,913] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.108.32.170:5000
+[2026-04-16 14:05:43,914] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2026-04-16 14:05:45,196] INFO in _internal: 10.117.25.11 - - [16/Apr/2026 14:05:45] "GET /socket.io/?EIO=4&transport=polling&t=PsKvJzl HTTP/1.1" 200 -
+[2026-04-16 14:05:45,234] INFO in _internal: 10.117.25.11 - - [16/Apr/2026 14:05:45] "POST /socket.io/?EIO=4&transport=polling&t=PsKvJ-H&sid=pLwDO3ghGnG1LyL-AAAA HTTP/1.1" 200 -
+[2026-04-16 14:05:45,234] INFO in _internal: 10.117.25.11 - - [16/Apr/2026 14:05:45] "GET /socket.io/?EIO=4&transport=polling&t=PsKvJ-I&sid=pLwDO3ghGnG1LyL-AAAA HTTP/1.1" 200 -
+[2026-04-16 14:05:48,119] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:48] "GET /socket.io/?EIO=4&transport=polling&t=PsKvKhK HTTP/1.1" 200 -
+[2026-04-16 14:05:48,126] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:48] "POST /socket.io/?EIO=4&transport=polling&t=PsKvKhQ&sid=kQcT1gqarc9OiQ_pAAAC HTTP/1.1" 200 -
+[2026-04-16 14:05:48,128] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:48] "GET /socket.io/?EIO=4&transport=polling&t=PsKvKhR&sid=kQcT1gqarc9OiQ_pAAAC HTTP/1.1" 200 -
+[2026-04-16 14:05:48,135] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:48] "GET /socket.io/?EIO=4&transport=polling&t=PsKvKhZ&sid=kQcT1gqarc9OiQ_pAAAC HTTP/1.1" 200 -
+[2026-04-16 14:05:50,596] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:50] "PUT /api/events/4e1c80db-efb6-4768-bd69-190a588fc29e HTTP/1.1" 200 -
+[2026-04-16 14:05:52,188] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:52] "GET / HTTP/1.1" 200 -
+[2026-04-16 14:05:52,196] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:52] "GET /socket.io/?EIO=4&transport=websocket&sid=kQcT1gqarc9OiQ_pAAAC HTTP/1.1" 200 -
+[2026-04-16 14:05:52,204] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-04-16 14:05:52,205] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:52] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-16 14:05:52,236] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:52] "GET /socket.io/?EIO=4&transport=polling&t=PsKvLha HTTP/1.1" 200 -
+[2026-04-16 14:05:52,260] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:52] "POST /socket.io/?EIO=4&transport=polling&t=PsKvLhk&sid=81RvRdh1vf8bS7qzAAAE HTTP/1.1" 200 -
+[2026-04-16 14:05:52,264] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:05:52] "GET /socket.io/?EIO=4&transport=polling&t=PsKvLhl&sid=81RvRdh1vf8bS7qzAAAE HTTP/1.1" 200 -
+[2026-04-16 14:06:00,645] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:00] "GET /api/query_org?unit=乘用车-奇瑞汽车股份有限公司-全球数字化智能中心-Middle%20Platform%20中台-价值链赋能-DIC%20数智产品研发平台-RDD%20软件研发部-H5端专业组 HTTP/1.1" 200 -
+[2026-04-16 14:06:00,677] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:00] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:06:01,283] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:01] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:06:06,090] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:06] "GET /api/query_org?unit=乘用车-奇瑞汽车股份有限公司-全字化智能中心-Middle%20Platform%20中台-价值链赋能-DIC%20数智产品研发平台-RDD%20软件研发部-H5端专业组 HTTP/1.1" 200 -
+[2026-04-16 14:06:06,136] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:06] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:06:06,673] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:06] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:06:11,160] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:11] "GET /api/query_org?unit=乘用车-奇瑞汽车股份有限公司-全字化智能中心-Middle%20Platform%20中台-价值链赋能-DIC%20数智产品研发平台-RDD%20软件研发部-H5端专业组 HTTP/1.1" 200 -
+[2026-04-16 14:06:11,191] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:11] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:06:12,507] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:12] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:06:20,817] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:20] "GET /api/query_org?unit=乘用车-奇瑞汽车股份有限公司-全字化智能中心-Middle%20Platform%20中台-价值链赋能-DIC%20数智产品研 HTTP/1.1" 200 -
+[2026-04-16 14:06:20,869] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:20] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:06:31,573] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:31] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:06:33,749] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:33] "PUT /api/events/5aad78a9-4503-46f2-859c-419f980b174c HTTP/1.1" 200 -
+[2026-04-16 14:06:36,762] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:36] "GET /api/query_org?unit=乘用车-奇瑞汽车股乘用车-奇瑞汽车股份有限公司-NEXTAI智能研究院-智能产品工程中心-智能管理产品部-组织与人效智能战队份有限公司-国际业务事业群-产品共创中心-造型设计中心-虚拟现实设计部 HTTP/1.1" 200 -
+[2026-04-16 14:06:36,803] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:36] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:06:51,802] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:06:51] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:10:23,337] INFO in _internal: 127.0.0.1 - - [16/Apr/2026 14:10:23] "PUT /api/events/c49ce59f-1cab-46ca-abd4-a902c809f88a HTTP/1.1" 200 -
+[2026-04-16 14:12:36,654] INFO in _internal: 10.117.25.11 - - [16/Apr/2026 14:12:36] "PUT /api/events/9b2c858f-5354-4117-b980-81d76e2f6cdc HTTP/1.1" 200 -
+[2026-04-17 17:25:01,953] INFO in app: ============== 系统启动 ==============
+[2026-04-17 17:25:02,563] INFO in app: ✅ Excel 加载成功：115 条规则
+[2026-04-17 17:25:02,626] INFO in app: ✅ 数据库表检查完成
+[2026-04-17 17:25:02,646] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.108.32.170:5000
+[2026-04-17 17:25:02,647] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2026-04-17 17:25:12,483] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:25:12] "GET / HTTP/1.1" 200 -
+[2026-04-17 17:25:12,498] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:25:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-04-17 17:25:12,502] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:25:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[2026-04-17 17:25:12,517] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:25:12] "GET /socket.io/?EIO=4&transport=polling&t=PsQmZR2 HTTP/1.1" 200 -
+[2026-04-17 17:25:12,609] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:25:12] "POST /socket.io/?EIO=4&transport=polling&t=PsQmZSK&sid=VwLWIkSFykhEK3HAAAAA HTTP/1.1" 200 -
+[2026-04-17 17:25:12,613] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:25:12] "GET /socket.io/?EIO=4&transport=polling&t=PsQmZSL&sid=VwLWIkSFykhEK3HAAAAA HTTP/1.1" 200 -
+[2026-04-17 17:27:01,616] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:27:01] "GET /api/query_org?unit=控股-奇瑞子公司-佛吉亚智能座舱系统（芜湖）有限公司-座椅事业部 HTTP/1.1" 200 -
+[2026-04-17 17:27:01,644] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:27:01] "PUT /api/events/4ba7b09f-6813-4989-9829-4270a91b7b6e HTTP/1.1" 200 -
+[2026-04-17 17:27:03,364] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:27:03] "GET /api/query_org?unit=控股-奇瑞子公司-佛吉亚智能座舱系统（芜湖）有限公司-座椅事业部 HTTP/1.1" 200 -
+[2026-04-17 17:27:03,394] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:27:03] "PUT /api/events/4ba7b09f-6813-4989-9829-4270a91b7b6e HTTP/1.1" 200 -
+[2026-04-17 17:27:29,195] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:27:29] "PUT /api/events/4ba7b09f-6813-4989-9829-4270a91b7b6e HTTP/1.1" 200 -
+[2026-04-17 17:27:41,617] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:27:41] "PUT /api/events/4ba7b09f-6813-4989-9829-4270a91b7b6e HTTP/1.1" 200 -
+[2026-04-17 17:33:47,990] INFO in app: ============== 系统启动 ==============
+[2026-04-17 17:33:48,388] INFO in app: ✅ Excel 加载成功：115 条规则
+[2026-04-17 17:33:48,433] INFO in app: ✅ 数据库表检查完成
+[2026-04-17 17:33:48,454] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.108.32.170:5000
+[2026-04-17 17:33:48,455] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2026-04-17 17:33:51,009] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:33:51] "GET /socket.io/?EIO=4&transport=polling&t=PsQoY0S HTTP/1.1" 200 -
+[2026-04-17 17:33:51,017] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:33:51] "POST /socket.io/?EIO=4&transport=polling&t=PsQoY0b&sid=snwgcGPgr_TFlv0wAAAA HTTP/1.1" 200 -
+[2026-04-17 17:33:51,020] INFO in _internal: 127.0.0.1 - - [17/Apr/2026 17:33:51] "GET /socket.io/?EIO=4&transport=polling&t=PsQoY0c&sid=snwgcGPgr_TFlv0wAAAA HTTP/1.1" 200 -
+[2026-04-23 09:06:33,268] INFO in app: ============== 系统启动 ==============
+[2026-04-23 09:06:34,030] INFO in app: ✅ Excel 加载成功：115 条规则
+[2026-04-23 09:06:34,073] INFO in app: ✅ 数据库表检查完成
+[2026-04-23 09:06:34,097] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.108.32.170:5000
+[2026-04-23 09:06:34,097] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2026-04-23 09:06:39,190] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:39] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:06:39,389] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:39] "[33mGET /static/css/bootstrap-icons HTTP/1.1[0m" 404 -
+[2026-04-23 09:06:39,392] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:39] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:06:39,402] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-04-23 09:06:39,412] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:39] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:06:39,414] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[2026-04-23 09:06:39,430] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:39] "GET /socket.io/?EIO=4&transport=polling&t=Pstt-x0 HTTP/1.1" 200 -
+[2026-04-23 09:06:39,804] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:39] "POST /socket.io/?EIO=4&transport=polling&t=Pstt--v&sid=3sVqT4ECrkcUyn3uAAAA HTTP/1.1" 200 -
+[2026-04-23 09:06:39,808] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:39] "GET /socket.io/?EIO=4&transport=polling&t=Pstt--x&sid=3sVqT4ECrkcUyn3uAAAA HTTP/1.1" 200 -
+[2026-04-23 09:06:40,724] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:40] "GET /socket.io/?EIO=4&transport=polling&t=Pstt_2v&sid=3sVqT4ECrkcUyn3uAAAA HTTP/1.1" 200 -
+[2026-04-23 09:06:43,815] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:43] "[33mGET /static/css/bootstrap-icons HTTP/1.1[0m" 404 -
+[2026-04-23 09:06:43,815] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:43] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[2026-04-23 09:06:43,827] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-04-23 09:06:43,829] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:43] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:06:43,833] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:43] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:06:43,865] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:43] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:06:46,771] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:46] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:06:46,970] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:46] "GET /socket.io/?EIO=4&transport=websocket&sid=3sVqT4ECrkcUyn3uAAAA HTTP/1.1" 200 -
+[2026-04-23 09:06:46,980] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:46] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:06:46,986] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:46] "[33mGET /static/css/bootstrap-icons HTTP/1.1[0m" 404 -
+[2026-04-23 09:06:46,992] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:46] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:06:46,996] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:46] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:06:46,997] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:46] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:06:46,997] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:46] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:06:47,013] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:47] "GET /socket.io/?EIO=4&transport=polling&t=Pstu0nW HTTP/1.1" 200 -
+[2026-04-23 09:06:47,025] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:47] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:06:47,156] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:47] "POST /socket.io/?EIO=4&transport=polling&t=Pstu0o8&sid=_iUdZtVcqdJp5JtfAAAC HTTP/1.1" 200 -
+[2026-04-23 09:06:47,157] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:47] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:06:47,161] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:06:47] "GET /socket.io/?EIO=4&transport=polling&t=Pstu0oB&sid=_iUdZtVcqdJp5JtfAAAC HTTP/1.1" 200 -
+[2026-04-23 09:07:16,571] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:07:16,581] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "GET /socket.io/?EIO=4&transport=websocket&sid=_iUdZtVcqdJp5JtfAAAC HTTP/1.1" 200 -
+[2026-04-23 09:07:16,592] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:07:16,596] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "[33mGET /static/css/bootstrap-icons HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:16,603] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:07:16,603] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:16,604] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:07:16,604] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:07:16,674] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:16,678] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "GET /socket.io/?EIO=4&transport=polling&t=Pstu80l HTTP/1.1" 200 -
+[2026-04-23 09:07:16,679] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:16,694] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "POST /socket.io/?EIO=4&transport=polling&t=Pstu81A&sid=l5Og87O46qi3SywIAAAE HTTP/1.1" 200 -
+[2026-04-23 09:07:16,698] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "GET /socket.io/?EIO=4&transport=polling&t=Pstu81C&sid=l5Og87O46qi3SywIAAAE HTTP/1.1" 200 -
+[2026-04-23 09:07:16,709] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:16] "GET /socket.io/?EIO=4&transport=polling&t=Pstu81V&sid=l5Og87O46qi3SywIAAAE HTTP/1.1" 200 -
+[2026-04-23 09:07:20,196] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:07:20,206] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "GET /socket.io/?EIO=4&transport=websocket&sid=l5Og87O46qi3SywIAAAE HTTP/1.1" 200 -
+[2026-04-23 09:07:20,215] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:07:20,222] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "[33mGET /static/css/bootstrap-icons HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:20,227] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:07:20,241] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:07:20,243] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:20,243] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:07:20,275] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:20,278] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:20,280] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "GET /socket.io/?EIO=4&transport=polling&t=Pstu8vJ HTTP/1.1" 200 -
+[2026-04-23 09:07:20,297] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "POST /socket.io/?EIO=4&transport=polling&t=Pstu8vU&sid=hy8I2h6xiRcuGKjIAAAG HTTP/1.1" 200 -
+[2026-04-23 09:07:20,301] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:20] "GET /socket.io/?EIO=4&transport=polling&t=Pstu8vV&sid=hy8I2h6xiRcuGKjIAAAG HTTP/1.1" 200 -
+[2026-04-23 09:07:23,018] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:23] "[33mGET /static/css/bootstrap-icons HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:27,891] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:27] "GET /static/css/bootstrap-icons.css HTTP/1.1" 200 -
+[2026-04-23 09:07:33,794] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:07:33,802] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "GET /socket.io/?EIO=4&transport=websocket&sid=hy8I2h6xiRcuGKjIAAAG HTTP/1.1" 200 -
+[2026-04-23 09:07:33,811] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:07:33,818] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "[33mGET /static/css/bootstrap-icons HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:33,822] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:07:33,823] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:07:33,828] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:07:33,832] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:33,872] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:33,874] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:33,878] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "GET /socket.io/?EIO=4&transport=polling&t=PstuCDm HTTP/1.1" 200 -
+[2026-04-23 09:07:33,913] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "POST /socket.io/?EIO=4&transport=polling&t=PstuCE0&sid=tII49kufBn2QCzkmAAAI HTTP/1.1" 200 -
+[2026-04-23 09:07:33,920] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:33] "GET /socket.io/?EIO=4&transport=polling&t=PstuCE2&sid=tII49kufBn2QCzkmAAAI HTTP/1.1" 200 -
+[2026-04-23 09:07:38,724] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:07:38,734] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "GET /socket.io/?EIO=4&transport=websocket&sid=tII49kufBn2QCzkmAAAI HTTP/1.1" 200 -
+[2026-04-23 09:07:38,748] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:07:38,754] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "[33mGET /static/css/bootstrap-icons HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:38,756] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:07:38,765] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:07:38,768] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:38,769] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:07:38,797] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:38,800] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:07:38,811] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "GET /socket.io/?EIO=4&transport=polling&t=PstuDQi HTTP/1.1" 200 -
+[2026-04-23 09:07:38,822] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "POST /socket.io/?EIO=4&transport=polling&t=PstuDR1&sid=Sw5yvr63uB2V-qTBAAAK HTTP/1.1" 200 -
+[2026-04-23 09:07:38,825] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:38] "GET /socket.io/?EIO=4&transport=polling&t=PstuDR2&sid=Sw5yvr63uB2V-qTBAAAK HTTP/1.1" 200 -
+[2026-04-23 09:07:48,454] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:48] "GET /api/query_org?unit=乘用车-奇瑞汽车股份有限公司-全球技术创新中心-智能化中心-智驾中心-数据与感知部 HTTP/1.1" 200 -
+[2026-04-23 09:07:48,525] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:48] "PUT /api/events/9b2c858f-5354-4117-b980-81d76e2f6cdc HTTP/1.1" 200 -
+[2026-04-23 09:07:55,830] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:07:55] "PUT /api/events/9b2c858f-5354-4117-b980-81d76e2f6cdc HTTP/1.1" 200 -
+[2026-04-23 09:08:00,975] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:00] "GET /api/query_org?unit=乘用车-奇瑞汽车股份有限公司-全球技术创新中心-智能化中心-智驾中心-数据与感知部 HTTP/1.1" 200 -
+[2026-04-23 09:08:01,047] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:01] "PUT /api/events/4e1c80db-efb6-4768-bd69-190a588fc29e HTTP/1.1" 200 -
+[2026-04-23 09:08:03,148] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:03] "GET /api/query_org?unit=乘用车-奇瑞汽车股份有限公司-全球技术创新中心-智能化中心-智舱中心-国际项目部 HTTP/1.1" 200 -
+[2026-04-23 09:08:03,193] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:03] "PUT /api/events/4e1c80db-efb6-4768-bd69-190a588fc29e HTTP/1.1" 200 -
+[2026-04-23 09:08:09,061] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:09] "PUT /api/events/4e1c80db-efb6-4768-bd69-190a588fc29e HTTP/1.1" 200 -
+[2026-04-23 09:08:18,377] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:08:18,572] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:08:18,574] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:08:18,582] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:08:18,592] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "[33mGET /static/css/bootstrap-icons HTTP/1.1[0m" 404 -
+[2026-04-23 09:08:18,593] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:08:18,594] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:08:18,609] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "GET /socket.io/?EIO=4&transport=polling&t=PstuN8k HTTP/1.1" 200 -
+[2026-04-23 09:08:18,640] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:08:18,699] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:08:18,710] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "POST /socket.io/?EIO=4&transport=polling&t=PstuNAH&sid=LlrQX8vVqyHWJkCdAAAM HTTP/1.1" 200 -
+[2026-04-23 09:08:18,723] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "GET /socket.io/?EIO=4&transport=polling&t=PstuNAJ&sid=LlrQX8vVqyHWJkCdAAAM HTTP/1.1" 200 -
+[2026-04-23 09:08:18,760] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:18] "GET /socket.io/?EIO=4&transport=polling&t=PstuNB5&sid=LlrQX8vVqyHWJkCdAAAM HTTP/1.1" 200 -
+[2026-04-23 09:08:46,957] INFO in app: ============== 系统启动 ==============
+[2026-04-23 09:08:47,392] INFO in app: ✅ Excel 加载成功：115 条规则
+[2026-04-23 09:08:47,471] INFO in app: ✅ 数据库表检查完成
+[2026-04-23 09:08:47,492] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.108.32.170:5000
+[2026-04-23 09:08:47,493] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2026-04-23 09:08:48,857] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:48] "GET /socket.io/?EIO=4&transport=polling&t=PstuUXK HTTP/1.1" 200 -
+[2026-04-23 09:08:48,865] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:48] "POST /socket.io/?EIO=4&transport=polling&t=PstuUXS&sid=1n-XPKP6rS2gZpC0AAAA HTTP/1.1" 200 -
+[2026-04-23 09:08:48,869] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:48] "GET /socket.io/?EIO=4&transport=polling&t=PstuUXT&sid=1n-XPKP6rS2gZpC0AAAA HTTP/1.1" 200 -
+[2026-04-23 09:08:49,788] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:49] "GET /socket.io/?EIO=4&transport=polling&t=PstuUlt HTTP/1.1" 200 -
+[2026-04-23 09:08:49,794] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:49] "POST /socket.io/?EIO=4&transport=polling&t=PstuUl_&sid=g0SzWmTpnbu1SZxVAAAC HTTP/1.1" 200 -
+[2026-04-23 09:08:49,814] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:49] "GET /socket.io/?EIO=4&transport=polling&t=PstuUm1&sid=g0SzWmTpnbu1SZxVAAAC HTTP/1.1" 200 -
+[2026-04-23 09:08:52,149] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:08:52,161] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "GET /socket.io/?EIO=4&transport=websocket&sid=1n-XPKP6rS2gZpC0AAAA HTTP/1.1" 200 -
+[2026-04-23 09:08:52,180] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:08:52,181] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:08:52,183] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "GET /static/css/bootstrap-icons.css HTTP/1.1" 200 -
+[2026-04-23 09:08:52,192] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:08:52,193] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:08:52,194] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:08:52,249] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "[33mGET /static/css/fonts/bootstrap-icons.woff2?2ab2cbbe07fcebb53bdaa7313bb290f2 HTTP/1.1[0m" 404 -
+[2026-04-23 09:08:52,259] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:08:52,281] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "[33mGET /static/css/fonts/bootstrap-icons.woff?2ab2cbbe07fcebb53bdaa7313bb290f2 HTTP/1.1[0m" 404 -
+[2026-04-23 09:08:52,282] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:08:52,310] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "GET /socket.io/?EIO=4&transport=polling&t=PstuVMt HTTP/1.1" 200 -
+[2026-04-23 09:08:52,326] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "POST /socket.io/?EIO=4&transport=polling&t=PstuVNS&sid=w1iuuUdUAHKRNbA5AAAE HTTP/1.1" 200 -
+[2026-04-23 09:08:52,332] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "GET /socket.io/?EIO=4&transport=polling&t=PstuVNU&sid=w1iuuUdUAHKRNbA5AAAE HTTP/1.1" 200 -
+[2026-04-23 09:08:52,342] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:08:52] "GET /socket.io/?EIO=4&transport=polling&t=PstuVNn&sid=w1iuuUdUAHKRNbA5AAAE HTTP/1.1" 200 -
+[2026-04-23 09:11:42,872] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:11:42,882] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "GET /socket.io/?EIO=4&transport=websocket&sid=w1iuuUdUAHKRNbA5AAAE HTTP/1.1" 200 -
+[2026-04-23 09:11:42,901] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "GET /static/css/bootstrap-icons.css HTTP/1.1" 200 -
+[2026-04-23 09:11:42,901] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:11:42,903] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:11:42,904] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:11:42,905] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:11:42,928] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:11:42,950] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "[33mGET /static/css/fonts/bootstrap-icons.woff2?2ab2cbbe07fcebb53bdaa7313bb290f2 HTTP/1.1[0m" 404 -
+[2026-04-23 09:11:42,978] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "[33mGET /static/css/fonts/bootstrap-icons.woff?2ab2cbbe07fcebb53bdaa7313bb290f2 HTTP/1.1[0m" 404 -
+[2026-04-23 09:11:42,979] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:11:42,990] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:11:42,993] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:42] "GET /socket.io/?EIO=4&transport=polling&t=Pstv929 HTTP/1.1" 200 -
+[2026-04-23 09:11:43,009] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:43] "POST /socket.io/?EIO=4&transport=polling&t=Pstv92P&sid=ZQrzUzlW6G_UwjpCAAAG HTTP/1.1" 200 -
+[2026-04-23 09:11:43,018] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:43] "GET /socket.io/?EIO=4&transport=polling&t=Pstv92T&sid=ZQrzUzlW6G_UwjpCAAAG HTTP/1.1" 200 -
+[2026-04-23 09:11:56,231] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:11:56,239] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "GET /socket.io/?EIO=4&transport=websocket&sid=ZQrzUzlW6G_UwjpCAAAG HTTP/1.1" 200 -
+[2026-04-23 09:11:56,249] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:11:56,253] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "GET /static/css/bootstrap-icons.css HTTP/1.1" 200 -
+[2026-04-23 09:11:56,261] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:11:56,265] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:11:56,268] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:11:56,272] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:11:56,286] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:11:56,292] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "[33mGET /static/css/fonts/bootstrap-icons.woff2?2ab2cbbe07fcebb53bdaa7313bb290f2 HTTP/1.1[0m" 404 -
+[2026-04-23 09:11:56,321] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "[33mGET /static/css/fonts/bootstrap-icons.woff?2ab2cbbe07fcebb53bdaa7313bb290f2 HTTP/1.1[0m" 404 -
+[2026-04-23 09:11:56,323] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:11:56,325] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "GET /socket.io/?EIO=4&transport=polling&t=PstvCIX HTTP/1.1" 200 -
+[2026-04-23 09:11:56,346] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "POST /socket.io/?EIO=4&transport=polling&t=PstvCIp&sid=W_ERYJMqS82H3YI2AAAI HTTP/1.1" 200 -
+[2026-04-23 09:11:56,355] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:11:56] "GET /socket.io/?EIO=4&transport=polling&t=PstvCIr&sid=W_ERYJMqS82H3YI2AAAI HTTP/1.1" 200 -
+[2026-04-23 09:12:17,724] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:17] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:12:17,947] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:17] "GET /static/css/bootstrap-icons.css HTTP/1.1" 200 -
+[2026-04-23 09:12:17,947] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:17] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:12:17,977] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:17] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:12:17,977] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:17] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:12:17,978] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:17] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:12:17,979] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:17] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:12:18,003] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:18] "GET /socket.io/?EIO=4&transport=polling&t=PstvHbE HTTP/1.1" 200 -
+[2026-04-23 09:12:18,029] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:18] "[33mGET /static/css/fonts/bootstrap-icons.woff2?2ab2cbbe07fcebb53bdaa7313bb290f2 HTTP/1.1[0m" 404 -
+[2026-04-23 09:12:18,037] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:18] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:12:18,110] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:18] "[33mGET /static/css/fonts/bootstrap-icons.woff?2ab2cbbe07fcebb53bdaa7313bb290f2 HTTP/1.1[0m" 404 -
+[2026-04-23 09:12:18,111] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:18] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:12:18,126] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:18] "POST /socket.io/?EIO=4&transport=polling&t=PstvHd8&sid=ib5T02eABkkwSdXvAAAK HTTP/1.1" 200 -
+[2026-04-23 09:12:18,138] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:18] "GET /socket.io/?EIO=4&transport=polling&t=PstvHdA&sid=ib5T02eABkkwSdXvAAAK HTTP/1.1" 200 -
+[2026-04-23 09:12:18,160] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:12:18] "GET /socket.io/?EIO=4&transport=polling&t=PstvHdj&sid=ib5T02eABkkwSdXvAAAK HTTP/1.1" 200 -
+[2026-04-23 09:13:21,773] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:13:21,785] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "GET /socket.io/?EIO=4&transport=websocket&sid=ib5T02eABkkwSdXvAAAK HTTP/1.1" 200 -
+[2026-04-23 09:13:21,798] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+[2026-04-23 09:13:21,803] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "GET /static/css/bootstrap-icons.css HTTP/1.1" 200 -
+[2026-04-23 09:13:21,804] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-04-23 09:13:21,806] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "GET /static/js/socket.io.min.js HTTP/1.1" 200 -
+[2026-04-23 09:13:21,807] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "GET /static/js/script.js HTTP/1.1" 200 -
+[2026-04-23 09:13:21,820] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2026-04-23 09:13:21,834] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "[33mGET /static/js/socket.io.min.js.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:13:21,842] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "GET /static/css/fonts/bootstrap-icons.woff2?2ab2cbbe07fcebb53bdaa7313bb290f2 HTTP/1.1" 200 -
+[2026-04-23 09:13:21,874] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+[2026-04-23 09:13:21,877] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "GET /socket.io/?EIO=4&transport=polling&t=PstvXBH HTTP/1.1" 200 -
+[2026-04-23 09:13:21,905] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "POST /socket.io/?EIO=4&transport=polling&t=PstvXBZ&sid=HVLPFrq0PKkMWgh5AAAM HTTP/1.1" 200 -
+[2026-04-23 09:13:21,909] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:21] "GET /socket.io/?EIO=4&transport=polling&t=PstvXBb&sid=HVLPFrq0PKkMWgh5AAAM HTTP/1.1" 200 -
+[2026-04-23 09:13:32,162] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:32] "GET / HTTP/1.1" 200 -
+[2026-04-23 09:13:32,170] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:32] "GET /socket.io/?EIO=4&transport=websocket&sid=HVLPFrq0PKkMWgh5AAAM HTTP/1.1" 200 -
+[2026-04-23 09:13:32,182] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[2026-04-23 09:13:32,183] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:32] "[36mGET /static/css/bootstrap-icons.css HTTP/1.1[0m" 304 -
+[2026-04-23 09:13:32,186] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+[2026-04-23 09:13:32,185] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:32] "[36mGET /static/js/socket.io.min.js HTTP/1.1[0m" 304 -
+[2026-04-23 09:13:32,184] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-04-23 09:13:32,205] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:32] "GET /socket.io/?EIO=4&transport=polling&t=PstvZig HTTP/1.1" 200 -
+[2026-04-23 09:13:32,230] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:32] "POST /socket.io/?EIO=4&transport=polling&t=PstvZj1&sid=8GhUDzYlE2F1Q1oMAAAO HTTP/1.1" 200 -
+[2026-04-23 09:13:32,235] INFO in _internal: 127.0.0.1 - - [23/Apr/2026 09:13:32] "GET /socket.io/?EIO=4&transport=polling&t=PstvZj2&sid=8GhUDzYlE2F1Q1oMAAAO HTTP/1.1" 200 -

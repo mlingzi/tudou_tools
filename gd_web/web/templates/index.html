@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>🛡️ 威胁档案管理系统 - 实时协作版</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="header-section d-flex justify-content-between align-items-center mb-5 mt-3">
+        <div>
+            <h4 class="fw-bold m-0"><i class="bi bi-shield-check text-primary"></i> 安全威胁事件实时面板</h4>
+            <small class="text-muted">实时同步已开启 | 10.2.16.120</small>
+        </div>
+        
+        <!-- 这里把两个按钮包在一起，d-flex gap-2 可以让它们自动保持合理的间距 -->
+        <div class="d-flex gap-2">
+            <a href="/logs" class="btn btn-dark shadow-sm">
+                <i class="bi bi-terminal"></i> 终端 DNS 监控
+            </a>
+            <button class="btn btn-primary shadow-sm" onclick="createNew()">
+                <i class="bi bi-plus-lg"></i> 新建工单
+            </button>
+        </div>
+    </div>
+
+    <div class="row g-4" id="eventList">
+        {% for event in events %}
+        <div class="col-md-6 col-xl-4">
+            <div class="card threat-card {% if event.is_pinned %}pinned-card{% endif %}">
+                <div class="event-number">#{{ loop.index }}</div>
+
+                <div class="card-tools">
+                    <button class="tool-btn btn-copy text-primary" onclick="copyLiveCard(this)">
+                        <i class="bi bi-clipboard"></i> 复制
+                    </button>                
+                    <button class="tool-btn {% if event.is_pinned %}is-pinned{% endif %}" 
+                            onclick="topItem('{{ event.id }}')">
+                        <i class="bi {% if event.is_pinned %}bi-pin-angle-fill{% else %}bi-pin-angle{% endif %}"></i> 
+                        {% if event.is_pinned %}取消置顶{% else %}置顶{% endif %}
+                    </button>
+                    <button class="tool-btn btn-del" onclick="deleteItem('{{ event.id }}')">
+                        <i class="bi bi-trash"></i> 删除
+                    </button>
+                </div>
+
+                <div class="card-body p-3 mt-2">
+                    <form class="live-form" data-id="{{ event.id }}">
+                        <div class="report-line"><span class="label-text">1. 风险分析：</span><input type="text" name="risk_analysis" class="live-input" value="{{ event.risk_analysis }}" onblur="saveData(this)"></div>
+                        <div class="report-line"><span class="label-text">2. 根因分析：</span><input type="text" name="root_cause" class="live-input" value="{{ event.root_cause }}" onblur="saveData(this)"></div>
+                        <div class="report-line"><span class="label-text">3. 处置措施：</span><input type="text" name="disposal" class="live-input" value="{{ event.disposal }}" onblur="saveData(this)"></div>
+                        <div class="report-line"><span class="label-text">4. 优化建议：</span><input type="text" name="advice" class="live-input" value="{{ event.advice }}" onblur="saveData(this)"></div>
+
+                        <div class="report-line">
+                            <span class="label-text">5. 是否违规：</span>
+                            <select name="is_violation" class="status-select {% if event.is_violation=='是' %}text-red{% else %}text-green{% endif %}" 
+                                    onchange="updateStatusColor(this)">
+                                <option value="否" {% if event.is_violation=='否' %}selected{% endif %}>否</option>
+                                <option value="是" {% if event.is_violation=='是' %}selected{% endif %}>是</option>
+                            </select>
+                            <span class="save-tag ms-auto">已同步 ✓</span>
+                        </div>
+
+                        <div class="report-line">
+                            <span class="label-text text-primary">6. 责任单位：</span>
+                            <input type="text" name="resp_unit" class="live-input fw-bold text-primary" value="{{ event.resp_unit }}" oninput="fetchOrg(this)" onblur="saveData(this)">
+                        </div>
+                        <div class="dashed-line"></div>
+                        <div class="report-line"><span class="label-text">7. 业务领域：</span><input type="text" name="biz_domain" class="live-input text-muted" value="{{ event.biz_domain }}" readonly></div>
+                        <div class="report-line"><span class="label-text">8. IT归口：</span><input type="text" name="it_dept" class="live-input text-muted" value="{{ event.it_dept }}" readonly></div>
+                        <div class="report-line"><span class="label-text">9. 责任人：</span><input type="text" name="handler" class="live-input" value="{{ event.handler }}" onblur="saveData(this)"></div>
+                        <div class="report-line"><span class="label-text">10. 备注：</span><input type="text" name="remark" class="live-input" value="{{ event.remark }}" onblur="saveData(this)"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/socket.io.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

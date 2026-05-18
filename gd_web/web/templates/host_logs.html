@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>主机日志侦测 - 高级分析版</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-icons.css') }}">
+    <style>
+        body { background-color: #f0f2f5; font-family: "Segoe UI", "PingFang SC", sans-serif;}
+        .log-container { background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 1px solid #e0e4e8; }
+        
+        /* 路径截断样式 */
+        .text-truncate-path { 
+            max-width: 180px; 
+            white-space: nowrap; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            display: inline-block; 
+            cursor: help;
+            vertical-align: bottom;
+        }
+        
+        .table thead th { font-weight: 600; color: #495057; background-color: #f8f9fa; white-space: nowrap; border-bottom: 2px solid #dee2e6; }
+        .table tbody td { vertical-align: middle; padding: 0.6rem 0.5rem !important; border-bottom: 1px solid #f1f3f5; }
+
+        /* 命令行/代码显示 */
+        .cmd-text { 
+            font-family: "Cascadia Code", Consolas, monospace; 
+            color: #d63384; 
+            background: #f8f9fa; 
+            padding: 2px 6px; 
+            border-radius: 4px; 
+            font-size: 11px; 
+            word-break: break-all; 
+            display: block;
+            max-width: 500px;
+            border: 1px solid #eee;
+        }
+
+        /* 下拉菜单样式 */
+        .dropdown-menu-columns { 
+            width: 350px; 
+            max-height: 550px; 
+            overflow-y: auto; 
+            font-size: 13px;
+        }
+        .dropdown-header { background: #f8f9fa; font-weight: bold; color: #000; margin-top: 10px; }
+        
+        /* 类型标签 */
+        .type-badge { font-size: 11px; font-weight: bold; padding: 2px 6px; border-radius: 4px; }
+        .tp-Process { background: #fff3cd; color: #856404; }
+        .tp-Network { background: #f8d7da; color: #721c24; }
+        .tp-DNS { background: #d1ecf1; color: #0c5460; }
+        .tp-File { background: #cce5ff; color: #004085; }
+        .tp-Registry { background: #d4edda; color: #155724; }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid px-4 py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+        <div>
+            <button class="btn btn-outline-secondary btn-sm me-3 shadow-sm" onclick="window.history.back()">
+                <i class="bi bi-arrow-left"></i> 返回
+            </button>
+            <h4 class="d-inline-block m-0 align-middle fw-bold">
+                <i class="bi bi-cpu text-primary"></i> 日志侦测 - <span id="hostTitle" class="text-primary">...</span>
+            </h4>
+        </div>
+        
+        <div class="d-flex gap-2 flex-wrap">
+            <!-- 字段动态选择器 (保留原始设计内容) -->
+            <div class="dropdown">
+                <button class="btn btn-outline-dark dropdown-toggle shadow-sm h-100" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    <i class="bi bi-sliders"></i> 选择显示列
+                </button>
+                <ul class="dropdown-menu dropdown-menu-columns p-3 shadow" id="columnSelector">
+                    <h6 class="dropdown-header px-0">基础信息</h6>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="time_created"> 产生时间</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="event_id"> 事件ID</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="event_type"> 事件类型</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="user"> 操作用户</label></li>
+                    
+                    <h6 class="dropdown-header px-0 border-top">进程活动 (ID 1/5)</h6>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="image"> 程序路径 (Image)</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="CommandLine"> 命令行 (CommandLine)</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" value="ParentImage"> 父进程程序</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" value="ParentCommandLine"> 父进程命令行</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" value="Hashes"> 哈希 (Hashes)</label></li>
+                    
+                    <h6 class="dropdown-header px-0 border-top">网络/DNS (ID 3/22)</h6>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="DestinationIp"> 目标IP (DestIP)</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="DestinationPort"> 目标端口 (Port)</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" value="Protocol"> 协议 (Protocol)</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" value="QueryName"> 查询域名 (QueryName)</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" value="QueryResults"> DNS解析结果</label></li>
+                    
+                    <h6 class="dropdown-header px-0 border-top">文件/注册表 (ID 11/12/13)</h6>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" value="TargetFilename"> 目标文件名</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" value="TargetObject"> 注册表项路径</label></li>
+                    <li><label class="dropdown-item px-1"><input type="checkbox" value="Details"> 注册表键值详情</label></li>
+                </ul>
+            </div>
+
+            <!-- 新增：高级检索面板 -->
+            <div class="d-flex gap-2 align-items-center bg-white px-2 py-1 rounded shadow-sm border">
+                <!-- 时间范围 -->
+                <div class="input-group input-group-sm" style="width: 320px;">
+                    <span class="input-group-text bg-light text-secondary"><i class="bi bi-clock"></i></span>
+                    <input type="datetime-local" id="filterStart" class="form-control text-center" title="开始时间">
+                    <span class="input-group-text bg-light px-1">-</span>
+                    <input type="datetime-local" id="filterEnd" class="form-control text-center" title="结束时间">
+                </div>
+
+                <!-- Event ID 下拉筛选 -->
+                <select id="filterEventId" class="form-select form-select-sm" style="width: 140px;">
+                    <option value="">所有行为</option>
+                    <option value="1">进程启动 (1)</option>
+                    <option value="3">网络连接 (3)</option>
+                    <option value="5">进程终止 (5)</option>
+                    <option value="11">文件创建 (11)</option>
+                    <option value="12">注册表修改(12/13)</option>
+                    <option value="22">DNS解析 (22)</option>
+                </select>
+
+                <!-- 精确检索框 -->
+                <div class="input-group input-group-sm" style="width: 240px;">
+                    <input type="text" id="logSearch" class="form-control" placeholder="IP / 路径 / 命令行..." onkeypress="if(event.key==='Enter') searchLogs()">
+                    <button class="btn btn-primary px-3" onclick="searchLogs()"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+
+            <!-- 刷新按钮 -->
+            <button class="btn btn-light border shadow-sm h-100" onclick="loadLogs()" title="刷新"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+    </div>
+
+    <div class="log-container p-3">
+        <div class="table-responsive" style="min-height: 60vh;">
+			<table class="table table-hover table-sm" id="dynamicLogTable">
+				<thead>
+					<tr id="tableHeaderRow"></tr>
+				</thead>
+				<tbody id="logTableBody"></tbody>
+			</table>
+        </div>
+        
+        <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+            <div class="text-muted small">共 <span id="totalRecords">0</span> 条记录</div>
+            <nav>
+                <ul class="pagination pagination-sm m-0 shadow-sm">
+                    <li class="page-item"><button class="page-link" onclick="changePage(-1)">上一页</button></li>
+                    <li class="page-item disabled"><a class="page-link" href="#"><span id="currentPageLabel">1</span> / <span id="totalPagesLabel">1</span></a></li>
+                    <li class="page-item"><button class="page-link" onclick="changePage(1)">下一页</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const currentHost = urlParams.get('hostname');
+document.getElementById('hostTitle').innerText = currentHost || '未知主机';
+
+// 补全所有核心字段映射 (保留原版内容)
+const COLUMN_MAP = {
+    time_created: "产生时间",
+    event_id: "ID",
+    event_type: "事件类型",
+    user: "用户",
+    image: "执行程序 (Image)",
+    CommandLine: "命令行 (CommandLine)",
+    ParentImage: "父进程",
+    ParentCommandLine: "父进程命令行",
+    DestinationIp: "目标IP",
+    DestinationPort: "端口",
+    Protocol: "协议",
+    QueryName: "域名 (DNS)",
+    QueryResults: "解析结果",
+    TargetFilename: "文件路径",
+    TargetObject: "注册表路径",
+    Details: "数据详情",
+    Hashes: "SHA256哈希"
+};
+
+let currentPage = 1, pageSize = 100, totalPages = 1;
+
+function getActiveColumns() {
+    return Array.from(document.querySelectorAll('#columnSelector input:checked')).map(cb => cb.value);
+}
+
+function loadLogs() {
+    if (!currentHost) return;
+    
+    // --- 新增：获取高级过滤参数 ---
+    const kw = document.getElementById('logSearch').value.trim();
+    const evId = document.getElementById('filterEventId').value;
+    
+    // 转换日期格式 (将 HTML 的 2024-05-01T12:00 转为后端数据库需要的 2024-05-01 12:00:00)
+    let start = document.getElementById('filterStart').value;
+    let end = document.getElementById('filterEnd').value;
+    if(start) start = start.replace('T', ' ') + ":00";
+    if(end) end = end.replace('T', ' ') + ":59";
+
+    const activeCols = getActiveColumns();
+    const tbody = document.getElementById('logTableBody');
+    const theadRow = document.getElementById('tableHeaderRow');
+
+    // 渲染表头并添加 Loading 动画
+    theadRow.innerHTML = activeCols.map(col => `<th>${COLUMN_MAP[col] || col}</th>`).join('');
+    tbody.innerHTML = `
+        <tr>
+            <td colspan="${activeCols.length}" class="text-center py-5">
+                <div class="spinner-border text-primary spinner-border-sm" role="status"></div>
+                <span class="text-muted ms-2 align-middle">正在引擎中极速检索...</span>
+            </td>
+        </tr>`;
+
+    // --- 新增：动态拼接 GET 请求参数 ---
+    let api = `/api/web/logs?hostname=${encodeURIComponent(currentHost)}&page=${currentPage}&limit=${pageSize}`;
+    if (kw) api += `&keyword=${encodeURIComponent(kw)}`;
+    if (evId) api += `&event_id=${evId}`;
+    if (start) api += `&start_time=${encodeURIComponent(start)}`;
+    if (end) api += `&end_time=${encodeURIComponent(end)}`;
+
+    fetch(api)
+        .then(res => res.json())
+        .then(res => {
+            tbody.innerHTML = '';
+            document.getElementById('totalRecords').innerText = res.total;
+            totalPages = Math.ceil(res.total / pageSize) || 1;
+            document.getElementById('currentPageLabel').innerText = currentPage;
+            document.getElementById('totalPagesLabel').innerText = totalPages;
+
+            if (res.data.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="${activeCols.length}" class="text-center py-4 text-muted">未检索到匹配的日志</td></tr>`;
+                return;
+            }
+
+            res.data.forEach(l => {
+                let details = {};
+                try { details = JSON.parse(l.details_json || '{}'); } catch(e) {}
+
+                const tr = document.createElement('tr');
+                activeCols.forEach(col => {
+                    const td = document.createElement('td');
+                    // 逻辑：数据库列没有则去 details_json 原始字段里找
+                    let val = l[col] || details[col] || '-';
+
+                    // 美化特定字段 (保留原版显示逻辑)
+                    if (col === 'event_type') {
+                        td.innerHTML = `<span class="type-badge tp-${val}">${val}</span>`;
+                    } else if (col === 'event_id') {
+                        td.innerHTML = `<span class="badge bg-secondary">#${val}</span>`;
+                    } else if (['CommandLine', 'ParentCommandLine', 'QueryResults', 'Details'].includes(col)) {
+                        td.innerHTML = val !== '-' ? `<code class="cmd-text">${val}</code>` : '-';
+                    } else if (['image', 'ParentImage', 'TargetFilename', 'TargetObject', 'Hashes'].includes(col)) {
+                        const short = val.split('\\').pop();
+                        td.innerHTML = `<span class="text-truncate-path" title="${val}">${short}</span>`;
+                    } else {
+                        td.innerText = val;
+                    }
+                    tr.appendChild(td);
+                });
+                tbody.appendChild(tr);
+            });
+        })
+        .catch(err => {
+            tbody.innerHTML = `<tr><td colspan="${activeCols.length}" class="text-center py-4 text-danger"><i class="bi bi-x-circle"></i> 请求发生错误：${err}</td></tr>`;
+        });
+}
+
+document.getElementById('columnSelector').addEventListener('change', loadLogs);
+// 切换过滤条件时，重置页码
+function searchLogs() { currentPage = 1; loadLogs(); }
+function changePage(d) { let n = currentPage + d; if (n > 0 && n <= totalPages) { currentPage = n; loadLogs(); } }
+
+// 页面加载完毕后自动拉取数据
+loadLogs();
+</script>
+</body>
+</html>
