@@ -1,0 +1,19 @@
+
+User accounts for \\DESKTOP-PCHRVE5
+
+-------------------------------------------------------------------------------
+Administrator            ai                       DefaultAccount           
+Guest                    WDAGUtilityAccount       
+The command completed successfully.
+
+ 
+Alias name     administrators
+Comment        管理员对计算机/域有不受限制的完全访问权
+
+Members
+
+-------------------------------------------------------------------------------
+Administrator
+ai
+The command completed successfully.
+

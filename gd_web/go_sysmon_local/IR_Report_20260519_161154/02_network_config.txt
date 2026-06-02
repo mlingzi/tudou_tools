@@ -1,0 +1,200 @@
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : DESKTOP-PCHRVE5
+   Primary Dns Suffix  . . . . . . . : 
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : chery.local
+
+Unknown adapter singbox_tun:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : sing-tun Tunnel
+   Physical Address. . . . . . . . . : 
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : fdfe:dcba:9876::1(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 172.18.0.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.252
+   Default Gateway . . . . . . . . . : fdfe:dcba:9876::2
+                                       172.18.0.2
+   DNS Servers . . . . . . . . . . . : fdfe:dcba:9876::2
+                                       172.18.0.2
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Unknown adapter 本地连接:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Wintun Userspace Tunnel
+   Physical Address. . . . . . . . . : 
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+
+Ethernet adapter 以太网:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   Physical Address. . . . . . . . . : 0A-00-27-00-00-0E
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::2c4b:7f18:f801:fe91%14(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+   DHCPv6 IAID . . . . . . . . . . . : 738852903
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2E-80-67-BF-FC-77-74-2C-AD-49
+   DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                       fec0:0:0:ffff::2%1
+                                       fec0:0:0:ffff::3%1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Wireless LAN adapter 本地连接* 11:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #3
+   Physical Address. . . . . . . . . : FC-77-74-2C-AD-4A
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter 本地连接* 12:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #4
+   Physical Address. . . . . . . . . : FE-77-74-2C-AD-49
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Ethernet adapter 以太网 4:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Fortinet Virtual Ethernet Adapter (NDIS 6.30)
+   Physical Address. . . . . . . . . : 00-09-0F-FE-00-01
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter WLAN 2:
+
+   Connection-specific DNS Suffix  . : chery.local
+   Description . . . . . . . . . . . : Intel(R) Dual Band Wireless-AC 3168 #2
+   Physical Address. . . . . . . . . : FC-77-74-2C-AD-49
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::8a6a:41b9:a976:4e45%9(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 10.117.16.211(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.252.0
+   Lease Obtained. . . . . . . . . . : 2026年5月15日 14:21:00
+   Lease Expires . . . . . . . . . . : 2026年5月23日 17:44:12
+   Default Gateway . . . . . . . . . : 10.117.19.254
+   DHCP Server . . . . . . . . . . . : 10.1.3.52
+   DHCPv6 IAID . . . . . . . . . . . : 133986164
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2E-80-67-BF-FC-77-74-2C-AD-49
+   DNS Servers . . . . . . . . . . . : 8.8.8.8
+                                       114.114.114.114
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter 蓝牙网络连接:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+   Physical Address. . . . . . . . . : FC-77-74-2C-AD-4D
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+ 
+===========================================================================
+Interface List
+ 24...........................sing-tun Tunnel
+  8...........................Wintun Userspace Tunnel
+ 14...0a 00 27 00 00 0e ......VirtualBox Host-Only Ethernet Adapter
+ 27...fc 77 74 2c ad 4a ......Microsoft Wi-Fi Direct Virtual Adapter #3
+ 25...fe 77 74 2c ad 49 ......Microsoft Wi-Fi Direct Virtual Adapter #4
+ 10...00 09 0f fe 00 01 ......Fortinet Virtual Ethernet Adapter (NDIS 6.30)
+  9...fc 77 74 2c ad 49 ......Intel(R) Dual Band Wireless-AC 3168 #2
+ 11...fc 77 74 2c ad 4d ......Bluetooth Device (Personal Area Network)
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0    10.117.19.254    10.117.16.211     55
+          0.0.0.0          0.0.0.0       172.18.0.2       172.18.0.1      0
+      10.117.16.0    255.255.252.0         On-link     10.117.16.211    311
+    10.117.16.211  255.255.255.255         On-link     10.117.16.211    311
+    10.117.19.255  255.255.255.255         On-link     10.117.16.211    311
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+       172.18.0.0  255.255.255.252         On-link        172.18.0.1    256
+       172.18.0.1  255.255.255.255         On-link        172.18.0.1    256
+       172.18.0.3  255.255.255.255         On-link        172.18.0.1    256
+     192.168.56.0    255.255.255.0         On-link      192.168.56.1    281
+     192.168.56.1  255.255.255.255         On-link      192.168.56.1    281
+   192.168.56.255  255.255.255.255         On-link      192.168.56.1    281
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link      192.168.56.1    281
+        224.0.0.0        240.0.0.0         On-link     10.117.16.211    311
+        224.0.0.0        240.0.0.0         On-link        172.18.0.1    256
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link      192.168.56.1    281
+  255.255.255.255  255.255.255.255         On-link     10.117.16.211    311
+  255.255.255.255  255.255.255.255         On-link        172.18.0.1    256
+===========================================================================
+Persistent Routes:
+  None
+
+IPv6 Route Table
+===========================================================================
+Active Routes:
+ If Metric Network Destination      Gateway
+ 24      0 ::/0                     fdfe:dcba:9876::2
+  1    331 ::1/128                  On-link
+ 24    256 fdfe:dcba:9876::/126     On-link
+ 24    256 fdfe:dcba:9876::1/128    On-link
+ 14    281 fe80::/64                On-link
+  9    311 fe80::/64                On-link
+ 14    281 fe80::2c4b:7f18:f801:fe91/128
+                                    On-link
+  9    311 fe80::8a6a:41b9:a976:4e45/128
+                                    On-link
+  1    331 ff00::/8                 On-link
+ 14    281 ff00::/8                 On-link
+  9    311 ff00::/8                 On-link
+ 24    256 ff00::/8                 On-link
+===========================================================================
+Persistent Routes:
+  None
+ 
+
+Interface: 10.117.16.211 --- 0x9
+  Internet Address      Physical Address      Type
+  10.117.19.254         40-73-4d-26-be-10     dynamic   
+  10.117.19.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.56.1 --- 0xe
+  Internet Address      Physical Address      Type
+  192.168.56.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 172.18.0.1 --- 0x18
+  Internet Address      Physical Address      Type
+  172.18.0.2                                  dynamic   
+  172.18.0.3                                  static    
+  224.0.0.22                                  static    
+  224.0.0.251                                 static    
+  224.0.0.252                                 static    

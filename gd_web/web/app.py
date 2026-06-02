@@ -198,7 +198,8 @@ def parse_sysmon_xml(xml_str):
             for data in event_data.findall("Data"):
                 name = data.attrib.get("Name")
                 data_dict[name] = data.text if data.text else "-"
-                
+        raw_computer = system.find("Computer").text or ""
+        short_hostname = raw_computer.split('.')[0].upper()                
         res = {
             "hostname": system.find("Computer").text,
             "event_id": event_id, "time_created": time_created,
@@ -355,8 +356,12 @@ def get_web_logs():
         limit = int(request.args.get('limit', 100))
         
         p = get_p()
-        where_clauses = [f"hostname = {p}"]
-        params = [h]
+        # 将前端传来的主机名也统一截断并转大写
+        h = h.split('.')[0].upper() if h else ''
+        
+        # 使用 LIKE '主机名%'，这样既能查出新入库的 CHERY，也能查出老库里的 CHERY.local
+        where_clauses = [f"hostname LIKE {p}"]
+        params = [f"{h}%"]
         
         if event_id:
             where_clauses.append(f"event_id = {p}")
@@ -493,6 +498,60 @@ def toggle_pin(event_id):
 def handle_typing(data):
     if not data or 'event_id' not in data or 'key' not in data: return
     emit('sync_input', {'event_id': data['event_id'], 'data': {data['key']: data.get('value', '')}}, broadcast=True, include_self=False)
+    
+@app.route('/api/agent/command/clear', methods=['POST'])
+@require_agent_token
+def clear_agent_command():
+    """Agent 执行完指令后的回调，使用 Token 鉴权，负责清空数据库状态"""
+    h = request.json.get('hostname')
+    logger.info(f"🔄 [Agent 指令回执] 主机 {h} 已完成指令，正在重置服务端状态...")
+    
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    # 将该主机的 command 字段设为空
+    cursor.execute(f"UPDATE sysmon_config SET command='' WHERE hostname={get_p()}", (h,))
+    conn.commit()
+    conn.close()
+    return jsonify({"status": "success"})
+
+@app.route('/api/web/logs/clear', methods=['POST'])
+@login_required
+def clear_sysmon_logs():
+    """清理日志库接口：支持按主机或天数清理，或者全部清空"""
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    try:
+        data = request.json or {}
+        h = data.get('hostname', '')
+        days = data.get('days', 0)  # 传 0 代表无视时间
+        
+        p = get_p()
+        query = "DELETE FROM sysmon_logs WHERE 1=1"
+        params = []
+        
+        # 1. 如果传了主机名，只删该主机的
+        if h:
+            h = h.split('.')[0].upper()
+            query += f" AND hostname LIKE {p}"
+            params.append(f"{h}%")
+            
+        # 2. 如果传了天数（例如 7），删除 7 天前的旧日志
+        if int(days) > 0:
+            cutoff = (datetime.now() - timedelta(days=int(days))).strftime('%Y-%m-%d %H:%M:%S')
+            query += f" AND time_created < {p}"
+            params.append(cutoff)
+            
+        cursor.execute(query, tuple(params))
+        conn.commit()
+        count = cursor.rowcount
+        
+        logger.info(f"🗑️ [Web 日志清理] 条件: 主机={h}, 保留天数={days} | 成功清理了 {count} 条日志")
+        return jsonify({"status": "success", "count": count})
+    except Exception as e:
+        logger.error(f"❌ [Web 日志清理失败]: {e}")
+        return jsonify({"status": "error", "message": str(e)})
+    finally:
+        conn.close()    
 
 # ==========================================
 # 启动入口

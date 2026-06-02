@@ -1,0 +1,1998 @@
+
+
+DisplayName=AllJoyn Router Service
+Name=AJRouter
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Application Layer Gateway Service
+Name=ALG
+PathName=C:\Windows\System32\alg.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Application Identity
+Name=AppIDSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Application Information
+Name=Appinfo
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Application Management
+Name=AppMgmt
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=App Readiness
+Name=AppReadiness
+PathName=C:\Windows\System32\svchost.exe -k AppReadiness -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft App-V Client
+Name=AppVClient
+PathName=C:\Windows\system32\AppVClient.exe
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=AppX Deployment Service (AppXSVC)
+Name=AppXSvc
+PathName=C:\Windows\system32\svchost.exe -k wsappx -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=AssignedAccessManager 服务
+Name=AssignedAccessManagerSvc
+PathName=C:\Windows\system32\svchost.exe -k AssignedAccessManagerSvc
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Audio Endpoint Builder
+Name=AudioEndpointBuilder
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Windows Audio
+Name=Audiosrv
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=手机网络时间
+Name=autotimesvc
+PathName=C:\Windows\system32\svchost.exe -k autoTimeSvc
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=ActiveX Installer (AxInstSV)
+Name=AxInstSV
+PathName=C:\Windows\system32\svchost.exe -k AxInstSVGroup
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=BitLocker Drive Encryption Service
+Name=BDESVC
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Base Filtering Engine
+Name=BFE
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNoNetworkFirewall -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Background Intelligent Transfer Service
+Name=BITS
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Background Tasks Infrastructure Service
+Name=BrokerInfrastructure
+PathName=C:\Windows\system32\svchost.exe -k DcomLaunch -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=蓝牙音频网关服务
+Name=BTAGService
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+StartMode=Manual
+State=Running
+
+
+DisplayName=AVCTP 服务
+Name=BthAvctpSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=蓝牙支持服务
+Name=bthserv
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=功能访问管理器服务
+Name=camsvc
+PathName=C:\Windows\system32\svchost.exe -k appmodel -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=连接设备平台服务
+Name=CDPSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Certificate Propagation
+Name=CertPropSvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Client License Service (ClipSVC)
+Name=ClipSVC
+PathName=C:\Windows\System32\svchost.exe -k wsappx -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft 云标识服务
+Name=cloudidsvc
+PathName=C:\Windows\system32\svchost.exe -k CloudIdServiceGroup -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=COM+ System Application
+Name=COMSysApp
+PathName=C:\Windows\system32\dllhost.exe /Processid:{02D4B3F1-FD88-11D1-960D-00805FC79235}
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=CoreMessaging
+Name=CoreMessagingRegistrar
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Intel(R) Content Protection HECI Service
+Name=cphs
+PathName=C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_65ac4d73bb85cb27\IntelCpHeciSvc.exe
+StartMode=Manual
+State=Running
+
+
+DisplayName=Intel(R) Content Protection HDCP Service
+Name=cplspcon
+PathName=C:\Windows\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_65ac4d73bb85cb27\IntelCpHDCPSvc.exe
+StartMode=Auto
+State=Running
+
+
+DisplayName=Cryptographic Services
+Name=CryptSvc
+PathName=C:\Windows\system32\svchost.exe -k NetworkService -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Offline Files
+Name=CscService
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=DCOM Server Process Launcher
+Name=DcomLaunch
+PathName=C:\Windows\system32\svchost.exe -k DcomLaunch -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Declared Configuration(DC) service
+Name=dcsvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Optimize drives
+Name=defragsvc
+PathName=C:\Windows\system32\svchost.exe -k defragsvc
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Device Association Service
+Name=DeviceAssociationService
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Device Install Service
+Name=DeviceInstall
+PathName=C:\Windows\system32\svchost.exe -k DcomLaunch -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=DevQuery Background Discovery Broker
+Name=DevQueryBroker
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=DHCP Client
+Name=Dhcp
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Microsoft (R) 诊断中心标准收集器服务
+Name=diagnosticshub.standardcollector.service
+PathName=C:\Windows\system32\DiagSvcs\DiagnosticsHub.StandardCollector.Service.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Diagnostic Execution Service
+Name=diagsvc
+PathName=C:\Windows\System32\svchost.exe -k diagnostics
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Connected User Experiences and Telemetry
+Name=DiagTrack
+PathName=C:\Windows\System32\svchost.exe -k utcsvc -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=DialogBlockingService
+Name=DialogBlockingService
+PathName=C:\Windows\system32\svchost.exe -k DialogBlockingService
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=显示策略服务
+Name=DispBrokerDesktopSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=显示增强服务
+Name=DisplayEnhancementService
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=设备管理注册服务
+Name=DmEnrollmentSvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=设备管理无线应用程序协议 (WAP) 推送消息路由服务
+Name=dmwappushservice
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=DNS Client
+Name=Dnscache
+PathName=C:\Windows\system32\svchost.exe -k NetworkService -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Delivery Optimization
+Name=DoSvc
+PathName=C:\Windows\System32\svchost.exe -k NetworkService -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Wired AutoConfig
+Name=dot3svc
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Diagnostic Policy Service
+Name=DPS
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNoNetwork -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Device Setup Manager
+Name=DsmSvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Data Sharing Service
+Name=DsSvc
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=数据使用量
+Name=DusmSvc
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Extensible Authentication Protocol
+Name=Eaphost
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft Edge Update Service (edgeupdate)
+Name=edgeupdate
+PathName="C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /svc
+StartMode=Auto
+State=Stopped
+
+
+DisplayName=Microsoft Edge Update Service (edgeupdatem)
+Name=edgeupdatem
+PathName="C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /medsvc
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Encrypting File System (EFS)
+Name=EFS
+PathName=C:\Windows\System32\lsass.exe
+StartMode=Manual
+State=Running
+
+
+DisplayName=嵌入模式
+Name=embeddedmode
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Enterprise App Management Service
+Name=EntAppSvc
+PathName=C:\Windows\system32\svchost.exe -k appmodel -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Event Log
+Name=EventLog
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=COM+ Event System
+Name=EventSystem
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Everything
+Name=Everything
+PathName="D:\projict\Everything\Everything.exe" -svc
+StartMode=Auto
+State=Running
+
+
+DisplayName=Fax
+Name=Fax
+PathName=C:\Windows\system32\fxssvc.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Function Discovery Provider Host
+Name=fdPHost
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Function Discovery Resource Publication
+Name=FDResPub
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=File History Service
+Name=fhsvc
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Font Cache Service
+Name=FontCache
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Windows Camera Frame Server
+Name=FrameServer
+PathName=C:\Windows\System32\svchost.exe -k Camera
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=NVIDIA FrameView SDK service
+Name=FvSvc
+PathName="C:\Program Files\NVIDIA Corporation\FrameViewSDK\nvfvsdksvc_x64.exe" -service
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=GameInput Service
+Name=GameInputSvc
+PathName=C:\Windows\System32\GameInputSvc.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Google Chrome Elevation Service (GoogleChromeElevationService)
+Name=GoogleChromeElevationService
+PathName="C:\Program Files\Google\Chrome\Application\148.0.7778.168\elevation_service.exe"
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Google 更新程序内部服务 (GoogleUpdaterInternalService149.0.7814.0)
+Name=GoogleUpdaterInternalService149.0.7814.0
+PathName="C:\Program Files (x86)\Google\GoogleUpdater\149.0.7814.0\updater.exe" --system --windows-service --service=update-internal
+StartMode=Auto
+State=Stopped
+
+
+DisplayName=Google 更新程序服务 (GoogleUpdaterService149.0.7814.0)
+Name=GoogleUpdaterService149.0.7814.0
+PathName="C:\Program Files (x86)\Google\GoogleUpdater\149.0.7814.0\updater.exe" --system --windows-service --service=update
+StartMode=Auto
+State=Stopped
+
+
+DisplayName=Group Policy Client
+Name=gpsvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Stopped
+
+
+DisplayName=GraphicsPerfSvc
+Name=GraphicsPerfSvc
+PathName=C:\Windows\System32\svchost.exe -k GraphicsPerfSvcGroup
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Human Interface Device Service
+Name=hidserv
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Huorong Internet Security Daemon
+Name=HipsDaemon
+PathName="C:\Program Files\Huorong\Sysdiag\bin\HipsDaemon.exe" -sHipsDaemon
+StartMode=Auto
+State=Running
+
+
+DisplayName=Huorong Windows Security Center
+Name=HRWSCCtrl
+PathName="C:\Program Files\Huorong\Sysdiag\bin\wsctrlsvc.exe" /svc_run
+StartMode=Manual
+State=Running
+
+
+DisplayName=HV 主机服务
+Name=HvHost
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows 移动热点服务
+Name=icssvc
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Intel(R) Graphics Command Center Service
+Name=igccservice
+PathName=C:\Windows\System32\DriverStore\FileRepository\igcc_dch.inf_amd64_5b51a286c5d2f192\OneApp.IGCC.WinService.exe
+StartMode=Auto
+State=Running
+
+
+DisplayName=Intel(R) HD Graphics Control Panel Service
+Name=igfxCUIService2.0.0.0
+PathName=C:\Windows\System32\DriverStore\FileRepository\cui_dch.inf_amd64_bdd49bbe6b990549\igfxCUIService.exe
+StartMode=Auto
+State=Running
+
+
+DisplayName=IKE and AuthIP IPsec Keying Modules
+Name=IKEEXT
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft Store 安装服务
+Name=InstallService
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Intel(R) TPM Provisioning Service
+Name=Intel(R) TPM Provisioning Service
+PathName=C:\Windows\System32\DriverStore\FileRepository\iclsclient.inf_amd64_fc84dfa25a6a7727\lib\TPMProvisioningService.exe
+StartMode=Auto
+State=Stopped
+
+
+DisplayName=IP Helper
+Name=iphlpsvc
+PathName=C:\Windows\System32\svchost.exe -k NetSvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=IP 转换配置服务
+Name=IpxlatCfgSvc
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Intel(R) Dynamic Application Loader Host Interface Service
+Name=jhi_service
+PathName=C:\Windows\System32\DriverStore\FileRepository\dal.inf_amd64_af50fdb80983f7bc\jhi_service.exe
+StartMode=Auto
+State=Running
+
+
+DisplayName=CNG Key Isolation
+Name=KeyIso
+PathName=C:\Windows\system32\lsass.exe
+StartMode=Manual
+State=Running
+
+
+DisplayName=KtmRm for Distributed Transaction Coordinator
+Name=KtmRm
+PathName=C:\Windows\System32\svchost.exe -k NetworkServiceAndNoImpersonation -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Server
+Name=LanmanServer
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Workstation
+Name=LanmanWorkstation
+PathName=C:\Windows\System32\svchost.exe -k NetworkService -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Geolocation Service
+Name=lfsvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Windows 许可证管理器服务
+Name=LicenseManager
+PathName=C:\Windows\System32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Link-Layer Topology Discovery Mapper
+Name=lltdsvc
+PathName=C:\Windows\System32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=TCP/IP NetBIOS Helper
+Name=lmhosts
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Local Session Manager
+Name=LSM
+PathName=C:\Windows\system32\svchost.exe -k DcomLaunch -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=语言体验服务
+Name=LxpSvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Downloaded Maps Manager
+Name=MapsBroker
+PathName=C:\Windows\System32\svchost.exe -k NetworkService -p
+StartMode=Auto
+State=Stopped
+
+
+DisplayName=McpManagementService
+Name=McpManagementService
+PathName=C:\Windows\system32\svchost.exe -k McpManagementServiceGroup
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft Defender Core 服务
+Name=MDCoreSvc
+PathName="C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25110.6-0\MpDefenderCoreService.exe"
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft Edge Elevation Service (MicrosoftEdgeElevationService)
+Name=MicrosoftEdgeElevationService
+PathName="C:\Program Files (x86)\Microsoft\Edge\Application\148.0.3967.70\elevation_service.exe"
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Mixed Reality OpenXR Service
+Name=MixedRealityOpenXRSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Defender Firewall
+Name=mpssvc
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNoNetworkFirewall -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Distributed Transaction Coordinator
+Name=MSDTC
+PathName=C:\Windows\System32\msdtc.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft iSCSI Initiator Service
+Name=MSiSCSI
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Installer
+Name=msiserver
+PathName=C:\Windows\system32\msiexec.exe /V
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft 键盘筛选器
+Name=MsKeyboardFilter
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=自然身份验证
+Name=NaturalAuthentication
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Network Connectivity Assistant
+Name=NcaSvc
+PathName=C:\Windows\System32\svchost.exe -k NetSvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Network Connection Broker
+Name=NcbService
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Network Connected Devices Auto-Setup
+Name=NcdAutoSetup
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNoNetwork -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Netlogon
+Name=Netlogon
+PathName=C:\Windows\system32\lsass.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Network Connections
+Name=Netman
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Network List Service
+Name=netprofm
+PathName=C:\Windows\System32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Network Setup Service
+Name=NetSetupSvc
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Net.Tcp Port Sharing Service
+Name=NetTcpPortSharing
+PathName=C:\Windows\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=Microsoft Passport Container
+Name=NgcCtnrSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Microsoft Passport
+Name=NgcSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Network Location Awareness
+Name=NlaSvc
+PathName=C:\Windows\System32\svchost.exe -k NetworkService -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Network Store Interface Service
+Name=nsi
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=NVIDIA LocalSystem Container
+Name=NvContainerLocalSystem
+PathName="C:\Program Files\NVIDIA Corporation\NvContainer\nvcontainer.exe" -s NvContainerLocalSystem -a -f "C:\ProgramData\NVIDIA\NvContainerLocalSystem.log" -l 3 -d "C:\Program Files\NVIDIA Corporation\NvContainer\plugins\LocalSystem" -r -p 30000 -st "C:\Program Files\NVIDIA Corporation\NvContainer\NvContainerTelemetryApi.dll" -ert
+StartMode=Auto
+State=Running
+
+
+DisplayName=NVIDIA Display Container LS
+Name=NVDisplay.ContainerLocalSystem
+PathName=C:\Windows\System32\DriverStore\FileRepository\nvmii.inf_amd64_5b4deda8605cff46\Display.NvContainer\NVDisplay.Container.exe -s NVDisplay.ContainerLocalSystem -f C:\ProgramData\NVIDIA\NVDisplay.ContainerLocalSystem.log -l 3 -d C:\Windows\System32\DriverStore\FileRepository\nvmii.inf_amd64_5b4deda8605cff46\Display.NvContainer\plugins\LocalSystem -r -p 30000 -cfg NVDisplay.ContainerLocalSystem\LocalSystem /ert
+StartMode=Auto
+State=Running
+
+
+DisplayName=Peer Networking Identity Manager
+Name=p2pimsvc
+PathName=C:\Windows\System32\svchost.exe -k LocalServicePeerNet
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Peer Networking Grouping
+Name=p2psvc
+PathName=C:\Windows\System32\svchost.exe -k LocalServicePeerNet
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Program Compatibility Assistant Service
+Name=PcaSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=BranchCache
+Name=PeerDistSvc
+PathName=C:\Windows\System32\svchost.exe -k PeerDist
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows 感知模拟服务
+Name=perceptionsimulation
+PathName=C:\Windows\system32\PerceptionSimulation\PerceptionSimulationService.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Performance Counter DLL Host
+Name=PerfHost
+PathName=C:\Windows\SysWow64\perfhost.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Phone Service
+Name=PhoneSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Performance Logs &amp; Alerts
+Name=pla
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNoNetwork -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Plug and Play
+Name=PlugPlay
+PathName=C:\Windows\system32\svchost.exe -k DcomLaunch -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=PNRP Machine Name Publication Service
+Name=PNRPAutoReg
+PathName=C:\Windows\System32\svchost.exe -k LocalServicePeerNet
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Peer Name Resolution Protocol
+Name=PNRPsvc
+PathName=C:\Windows\System32\svchost.exe -k LocalServicePeerNet
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=IPsec Policy Agent
+Name=PolicyAgent
+PathName=C:\Windows\system32\svchost.exe -k NetworkServiceNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Power
+Name=Power
+PathName=C:\Windows\system32\svchost.exe -k DcomLaunch -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Printer Extensions and Notifications
+Name=PrintNotify
+PathName=C:\Windows\system32\svchost.exe -k print
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=User Profile Service
+Name=ProfSvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Windows PushToInstall 服务
+Name=PushToInstall
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=QoE Agent
+Name=QoE Agent
+PathName="C:\Program Files (x86)\uSmartView\public\Qoe\QoE_Agent.exe"
+StartMode=Auto
+State=Running
+
+
+DisplayName=Quality Windows Audio Video Experience
+Name=QWAVE
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Remote Access Auto Connection Manager
+Name=RasAuto
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Remote Access Connection Manager
+Name=RasMan
+PathName=C:\Windows\System32\svchost.exe -k netsvcs
+StartMode=Auto
+State=Running
+
+
+DisplayName=Routing and Remote Access
+Name=RemoteAccess
+PathName=C:\Windows\System32\svchost.exe -k netsvcs
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=Remote Registry
+Name=RemoteRegistry
+PathName=C:\Windows\system32\svchost.exe -k localService -p
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=零售演示服务
+Name=RetailDemo
+PathName=C:\Windows\System32\svchost.exe -k rdxgroup
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=无线电管理服务
+Name=RmSvc
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted
+StartMode=Manual
+State=Running
+
+
+DisplayName=RPC Endpoint Mapper
+Name=RpcEptMapper
+PathName=C:\Windows\system32\svchost.exe -k RPCSS -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Remote Procedure Call (RPC) Locator
+Name=RpcLocator
+PathName=C:\Windows\system32\locator.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Remote Procedure Call (RPC)
+Name=RpcSs
+PathName=C:\Windows\system32\svchost.exe -k rpcss -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=RustDesk Service
+Name=RustDesk
+PathName="D:\RustDesk\RustDesk.exe" --service
+StartMode=Auto
+State=Running
+
+
+DisplayName=Security Accounts Manager
+Name=SamSs
+PathName=C:\Windows\system32\lsass.exe
+StartMode=Auto
+State=Running
+
+
+DisplayName=Smart Card
+Name=SCardSvr
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Smart Card Device Enumeration Service
+Name=ScDeviceEnum
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Task Scheduler
+Name=Schedule
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Smart Card Removal Policy
+Name=SCPolicySvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows 备份
+Name=SDRSVC
+PathName=C:\Windows\system32\svchost.exe -k SDRSVC
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Secondary Logon
+Name=seclogon
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Windows 安全中心服务
+Name=SecurityHealthService
+PathName=C:\Windows\system32\SecurityHealthService.exe
+StartMode=Manual
+State=Running
+
+
+DisplayName=付款和 NFC/SE 管理器
+Name=SEMgrSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=System Event Notification Service
+Name=SENS
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Sense
+Name=Sense
+PathName="C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe"
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Sensor Data Service
+Name=SensorDataService
+PathName=C:\Windows\System32\SensorDataService.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Sensor Service
+Name=SensorService
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Sensor Monitoring Service
+Name=SensrSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Remote Desktop Configuration
+Name=SessionEnv
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Internet Connection Sharing (ICS)
+Name=SharedAccess
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=空间数据服务
+Name=SharedRealitySvc
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Shell Hardware Detection
+Name=ShellHWDetection
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Shared PC Account Manager
+Name=shpamsvc
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=Microsoft Storage Spaces SMP
+Name=smphost
+PathName=C:\Windows\System32\svchost.exe -k smphost
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft Windows SMS 路由器服务。
+Name=SmsRouter
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=SNMP 陷阱
+Name=SNMPTRAP
+PathName=C:\Windows\System32\snmptrap.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows 感知服务
+Name=spectrum
+PathName=C:\Windows\system32\spectrum.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Print Spooler
+Name=Spooler
+PathName=C:\Windows\System32\spoolsv.exe
+StartMode=Auto
+State=Running
+
+
+DisplayName=Software Protection
+Name=sppsvc
+PathName=C:\Windows\system32\sppsvc.exe
+StartMode=Auto
+State=Stopped
+
+
+DisplayName=SSDP Discovery
+Name=SSDPSRV
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=OpenSSH Authentication Agent
+Name=ssh-agent
+PathName=C:\Windows\System32\OpenSSH\ssh-agent.exe
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=Secure Socket Tunneling Protocol Service
+Name=SstpSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=State Repository Service
+Name=StateRepository
+PathName=C:\Windows\system32\svchost.exe -k appmodel -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Windows Image Acquisition (WIA)
+Name=stisvc
+PathName=C:\Windows\system32\svchost.exe -k imgsvc
+StartMode=Auto
+State=Running
+
+
+DisplayName=Storage Service
+Name=StorSvc
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Spot Verifier
+Name=svsvc
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft Software Shadow Copy Provider
+Name=swprv
+PathName=C:\Windows\System32\svchost.exe -k swprv
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=SysMain
+Name=SysMain
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=System Events Broker
+Name=SystemEventsBroker
+PathName=C:\Windows\system32\svchost.exe -k DcomLaunch -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Touch Keyboard and Handwriting Panel Service
+Name=TabletInputService
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Telephony
+Name=TapiSrv
+PathName=C:\Windows\System32\svchost.exe -k NetworkService -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Remote Desktop Services
+Name=TermService
+PathName=C:\Windows\System32\svchost.exe -k NetworkService
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Themes
+Name=Themes
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Storage Tiers Management
+Name=TieringEngineService
+PathName=C:\Windows\system32\TieringEngineService.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Time Broker
+Name=TimeBrokerSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=ToDesk Service
+Name=ToDesk_Service
+PathName="D:\projict\ToDesk\ToDesk.exe" --runservice
+StartMode=Auto
+State=Running
+
+
+DisplayName=Web 帐户管理器
+Name=TokenBroker
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Distributed Link Tracking Client
+Name=TrkWks
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=建议疑难解答服务
+Name=TroubleshootingSvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Modules Installer
+Name=TrustedInstaller
+PathName=C:\Windows\servicing\TrustedInstaller.exe
+StartMode=Manual
+State=Running
+
+
+DisplayName=自动时区更新程序
+Name=tzautoupdate
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=User Experience Virtualization Service
+Name=UevAgentService
+PathName=C:\Windows\system32\AgentService.exe
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=Microsoft Update Health Service
+Name=uhssvc
+PathName="C:\Program Files\Microsoft Update Health Tools\uhssvc.exe"
+StartMode=Disabled
+State=Stopped
+
+
+DisplayName=Remote Desktop Services UserMode Port Redirector
+Name=UmRdpService
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=UpdateDaemon
+Name=UpdateDaemon
+PathName="C:\Program Files (x86)\uSmartviewUpdate\UpdateDaemon.exe"
+StartMode=Auto
+State=Running
+
+
+DisplayName=UPnP Device Host
+Name=upnphost
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=User Manager
+Name=UserManager
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=更新 Orchestrator 服务
+Name=UsoSvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=立体音频组合器服务
+Name=VacSvc
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Credential Manager
+Name=VaultSvc
+PathName=C:\Windows\system32\lsass.exe
+StartMode=Manual
+State=Running
+
+
+DisplayName=VirtualBox system service
+Name=VBoxSDS
+PathName="D:\VirtualBox\VBoxSDS.exe"
+StartMode=Manual
+State=Running
+
+
+DisplayName=Virtual Disk
+Name=vds
+PathName=C:\Windows\System32\vds.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Hyper-V Guest Service Interface
+Name=vmicguestinterface
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Hyper-V Heartbeat Service
+Name=vmicheartbeat
+PathName=C:\Windows\system32\svchost.exe -k ICService -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Hyper-V Data Exchange Service
+Name=vmickvpexchange
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Hyper-V 远程桌面虚拟化服务
+Name=vmicrdv
+PathName=C:\Windows\system32\svchost.exe -k ICService -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Hyper-V Guest Shutdown Service
+Name=vmicshutdown
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Hyper-V Time Synchronization Service
+Name=vmictimesync
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Hyper-V PowerShell Direct Service
+Name=vmicvmsession
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Hyper-V 卷影复制请求程序
+Name=vmicvss
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Volume Shadow Copy
+Name=VSS
+PathName=C:\Windows\system32\vssvc.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Time
+Name=W32Time
+PathName=C:\Windows\system32\svchost.exe -k LocalService
+StartMode=Auto
+State=Running
+
+
+DisplayName=Windows 更新医生服务
+Name=WaaSMedicSvc
+PathName=C:\Windows\system32\svchost.exe -k wusvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=WalletService
+Name=WalletService
+PathName=C:\Windows\System32\svchost.exe -k appmodel -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=WarpJITSvc
+Name=WarpJITSvc
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Block Level Backup Engine Service
+Name=wbengine
+PathName="C:\Windows\system32\wbengine.exe"
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Biometric Service
+Name=WbioSrvc
+PathName=C:\Windows\system32\svchost.exe -k WbioSvcGroup
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Connection Manager
+Name=Wcmsvc
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Windows Connect Now - Config Registrar
+Name=wcncsvc
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceAndNoImpersonation -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Diagnostic Service Host
+Name=WdiServiceHost
+PathName=C:\Windows\System32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Diagnostic System Host
+Name=WdiSystemHost
+PathName=C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Microsoft Defender 防病毒网络检查服务
+Name=WdNisSvc
+PathName="C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25110.6-0\NisSrv.exe"
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=WebClient
+Name=WebClient
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Event Collector
+Name=Wecsvc
+PathName=C:\Windows\system32\svchost.exe -k NetworkService -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=WemeetUpdateSvc
+Name=WemeetUpdateSvc
+PathName="C:\Program Files (x86)\Tencent\UpdateSvr\WemeetUpdateSvc.exe"
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Encryption Provider Host Service
+Name=WEPHOSTSVC
+PathName=C:\Windows\system32\svchost.exe -k WepHostSvcGroup
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Problem Reports Control Panel Support
+Name=wercplsupport
+PathName=C:\Windows\System32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows Error Reporting Service
+Name=WerSvc
+PathName=C:\Windows\System32\svchost.exe -k WerSvcGroup
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=WLAN Direct 服务连接管理器服务
+Name=WFDSConMgrSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Still Image Acquisition Events
+Name=WiaRpc
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Microsoft Defender 防病毒服务
+Name=WinDefend
+PathName="C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25110.6-0\MsMpEng.exe"
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=WinHTTP Web Proxy Auto-Discovery Service
+Name=WinHttpAutoProxySvc
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=Windows Management Instrumentation
+Name=Winmgmt
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Windows Remote Management (WS-Management)
+Name=WinRM
+PathName=C:\Windows\System32\svchost.exe -k NetworkService -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows 预览体验成员服务
+Name=wisvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=WLAN AutoConfig
+Name=WlanSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Microsoft Account Sign-in Assistant
+Name=wlidsvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=本地配置文件助手服务
+Name=wlpasvc
+PathName=C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows 管理服务
+Name=WManSvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=WMI Performance Adapter
+Name=wmiApSrv
+PathName=C:\Windows\system32\wbem\WmiApSrv.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Intel(R) Management Engine WMI Provider Registration
+Name=WMIRegistrationService
+PathName=C:\Windows\System32\DriverStore\FileRepository\mewmiprov.inf_amd64_d51901c26227fb29\WMIRegistrationService.exe
+StartMode=Auto
+State=Running
+
+
+DisplayName=Windows Media Player Network Sharing Service
+Name=WMPNetworkSvc
+PathName="C:\Program Files\Windows Media Player\wmpnetwk.exe"
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Work Folders
+Name=workfolderssvc
+PathName=C:\Windows\System32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=家长控制
+Name=WpcMonSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalService
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Portable Device Enumerator Service
+Name=WPDBusEnum
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Windows 推送通知系统服务
+Name=WpnService
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=WPS Office Cloud Service
+Name=wpscloudsvr
+PathName="C:\Program Files (x86)\Kingsoft\office6\wpscloudsvr.exe" LocalService
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Security Center
+Name=wscsvc
+PathName=C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+StartMode=Auto
+State=Running
+
+
+DisplayName=Windows Search
+Name=WSearch
+PathName=C:\Windows\system32\SearchIndexer.exe /Embedding
+StartMode=Auto
+State=Running
+
+
+DisplayName=Windows Update
+Name=wuauserv
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=WWAN AutoConfig
+Name=WwanSvc
+PathName=C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Xbox Live 身份验证管理器
+Name=XblAuthManager
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Xbox Live 游戏保存
+Name=XblGameSave
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Xbox Accessory Management Service
+Name=XboxGipSvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=Xbox Live 网络服务
+Name=XboxNetApiSvc
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=迅雷下载基础服务（用于快速申请磁盘空间及接管浏览器下载请求）
+Name=XLServicePlatform
+PathName=C:\Windows\system32\svchost.exe -k netsvcs -p -s XLServicePlatform
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=ZTE PROCESS Guard
+Name=ZTE PROCESS Guard
+PathName="C:\Program Files (x86)\uSmartView\public\ZTEProcessSvcGuard.exe"
+StartMode=Auto
+State=Running
+
+
+DisplayName=ZTE USBIP
+Name=ZTE USBIP
+PathName="C:\Program Files (x86)\uSmartView\redirect\usb\server\ZTEUsbIpSvc.exe"
+StartMode=Auto
+State=Running
+
+
+DisplayName=AarSvc_587f3
+Name=AarSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k AarSvcGroup -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=BcastDVRUserService_587f3
+Name=BcastDVRUserService_587f3
+PathName=C:\Windows\system32\svchost.exe -k BcastDVRUserService
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=BluetoothUserService_587f3
+Name=BluetoothUserService_587f3
+PathName=C:\Windows\system32\svchost.exe -k BthAppGroup -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=CaptureService_587f3
+Name=CaptureService_587f3
+PathName=C:\Windows\system32\svchost.exe -k LocalService -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=cbdhsvc_587f3
+Name=cbdhsvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k ClipboardSvcGroup -p
+StartMode=Manual
+State=Running
+
+
+DisplayName=CDPUserSvc_587f3
+Name=CDPUserSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+StartMode=Auto
+State=Running
+
+
+DisplayName=ConsentUxUserSvc_587f3
+Name=ConsentUxUserSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k DevicesFlow
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=CredentialEnrollmentManagerUserSvc_587f3
+Name=CredentialEnrollmentManagerUserSvc_587f3
+PathName=C:\Windows\system32\CredentialEnrollmentManager.exe
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=DeviceAssociationBrokerSvc_587f3
+Name=DeviceAssociationBrokerSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k DevicesFlow -p
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=DevicePickerUserSvc_587f3
+Name=DevicePickerUserSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k DevicesFlow
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=DevicesFlowUserSvc_587f3
+Name=DevicesFlowUserSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k DevicesFlow
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=MessagingService_587f3
+Name=MessagingService_587f3
+PathName=C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=OneSyncSvc_587f3
+Name=OneSyncSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+StartMode=Auto
+State=Running
+
+
+DisplayName=PimIndexMaintenanceSvc_587f3
+Name=PimIndexMaintenanceSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+StartMode=Manual
+State=Running
+
+
+DisplayName=PrintWorkflowUserSvc_587f3
+Name=PrintWorkflowUserSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k PrintWorkflow
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=UdkUserSvc_587f3
+Name=UdkUserSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k UdkSvcGroup
+StartMode=Manual
+State=Stopped
+
+
+DisplayName=UnistoreSvc_587f3
+Name=UnistoreSvc_587f3
+PathName=C:\Windows\System32\svchost.exe -k UnistackSvcGroup
+StartMode=Manual
+State=Running
+
+
+DisplayName=UserDataSvc_587f3
+Name=UserDataSvc_587f3
+PathName=C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+StartMode=Manual
+State=Running
+
+
+DisplayName=WpnUserService_587f3
+Name=WpnUserService_587f3
+PathName=C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+StartMode=Auto
+State=Running
+
+
+DisplayName=Microsoft PC Manager Service
+Name=PCManager Service Store
+PathName=C:\Program Files\WindowsApps\Microsoft.MicrosoftPCManager_3.21.4.0_x64__8wekyb3d8bbwe\PCManager\MSPCManagerService.exe
+StartMode=Auto
+State=Running
+
+
+

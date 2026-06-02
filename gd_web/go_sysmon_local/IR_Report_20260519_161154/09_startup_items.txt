@@ -1,0 +1,59 @@
+
+
+Caption=OneDriveSetup
+Command=C:\Windows\SysWOW64\OneDriveSetup.exe /thfirstsetup
+
+
+Caption=OneDriveSetup
+Command=C:\Windows\SysWOW64\OneDriveSetup.exe /thfirstsetup
+
+
+Caption=OneDrive
+Command="C:\Users\ai\AppData\Local\Microsoft\OneDrive\OneDrive.exe" /background
+
+
+Caption=Microsoft Edge Update
+Command="C:\Users\ai\AppData\Local\Microsoft\EdgeUpdate\1.3.233.3\MicrosoftEdgeUpdateCore.exe"
+
+
+Caption=Feishu
+Command="D:\Feishu\Feishu.exe"
+
+
+Caption=Proxifier
+Command="D:\Proxifier\Proxifier.exe" aut
+
+
+Caption=BaiduYunDetect
+Command="C:\Users\ai\AppData\Roaming\baidu\BaiduNetdisk\YunDetectService.exe"
+
+
+Caption=BaiduYunGuanjia
+Command="C:\Users\ai\AppData\Roaming\baidu\BaiduNetdisk\BaiduNetdisk.exe" AutoRun
+
+
+Caption=v2rayNAutoRun_f2456b34af10bb824047c20e9ae42693
+Command="D:\v2rayN\v2rayN.exe"
+
+
+Caption=MicrosoftEdgeAutoLaunch_7147CC69D0B83EB05D6284A31694BAFE
+Command="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --win-session-start
+
+
+Caption=RustDesk Tray
+Command=D:\RustDesk\rustdesk.exe --tray
+
+
+Caption=SecurityHealth
+Command=%windir%\system32\SecurityHealthSystray.exe
+
+
+Caption=Everything
+Command="D:\projict\Everything\Everything.exe" -startup
+
+
+Caption=sysdiag
+Command="C:\Program Files\Huorong\Sysdiag\bin\hipstray.exe"
+
+
+

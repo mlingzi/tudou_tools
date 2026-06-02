@@ -1,0 +1,92 @@
+
+Host Name:                 DESKTOP-PCHRVE5
+OS Name:                   Microsoft Windows 10 专业版
+OS Version:                10.0.19045 N/A Build 19045
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          ai
+Registered Organization:   N/A
+Product ID:                00331-10000-00001-AA920
+Original Install Date:     2024/9/21, 14:20:02
+System Boot Time:          2026/5/14, 9:55:11
+System Manufacturer:       MECHREVO S1 Series
+System Model:              S1 Series
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 142 Stepping 10 GenuineIntel ~1800 Mhz
+BIOS Version:              American Megatrends Inc. E14B1IT2.105, 2018/7/5
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             zh-cn;Chinese (China)
+Input Locale:              zh-cn;Chinese (China)
+Time Zone:                 (UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi
+Total Physical Memory:     8,074 MB
+Available Physical Memory: 1,686 MB
+Virtual Memory: Max Size:  23,434 MB
+Virtual Memory: Available: 10,383 MB
+Virtual Memory: In Use:    13,051 MB
+Page File Location(s):     D:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\DESKTOP-PCHRVE5
+Hotfix(s):                 23 Hotfix(s) Installed.
+                           [01]: KB5066130
+                           [02]: KB5020872
+                           [03]: KB5000736
+                           [04]: KB5011048
+                           [05]: KB5011050
+                           [06]: KB5015684
+                           [07]: KB5033052
+                           [08]: KB5072653
+                           [09]: KB5071959
+                           [10]: KB5043130
+                           [11]: KB5046823
+                           [12]: KB5050388
+                           [13]: KB5052916
+                           [14]: KB5054682
+                           [15]: KB5058526
+                           [16]: KB5059504
+                           [17]: KB5063706
+                           [18]: KB5063261
+                           [19]: KB5063979
+                           [20]: KB5066790
+                           [21]: KB5071982
+                           [22]: KB5005699
+                           [23]: KB5075039
+Network Card(s):           7 NIC(s) Installed.
+                           [01]: Bluetooth Device (Personal Area Network)
+                                 Connection Name: 蓝牙网络连接
+                                 Status:          Media disconnected
+                           [02]: Intel(R) Dual Band Wireless-AC 3168
+                                 Connection Name: WLAN 2
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     10.1.3.52
+                                 IP address(es)
+                                 [01]: 10.117.16.211
+                                 [02]: fe80::8a6a:41b9:a976:4e45
+                           [03]: Wintun Userspace Tunnel
+                                 Connection Name: singbox_tun
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 172.18.0.1
+                                 [02]: fdfe:dcba:9876::1
+                           [04]: VirtualBox Host-Only Ethernet Adapter
+                                 Connection Name: 以太网
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.56.1
+                                 [02]: fe80::2c4b:7f18:f801:fe91
+                           [05]: Wintun Userspace Tunnel
+                                 Connection Name: 本地连接
+                                 Status:          Media disconnected
+                           [06]: Fortinet Virtual Ethernet Adapter (NDIS 6.30)
+                                 Connection Name: 以太网 4
+                                 Status:          Media disconnected
+                           [07]: Fortinet SSL VPN Virtual Ethernet Adapter
+                                 Connection Name: 以太网 5
+                                 Status:          Hardware not present
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes

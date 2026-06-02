@@ -1,0 +1,735 @@
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       920
+  RpcSs
+ [svchost.exe]
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    0.0.0.0:3240           0.0.0.0:0              LISTENING       4912
+ [ZTEUsbIpSvc.exe]
+  TCP    0.0.0.0:5040           0.0.0.0:0              LISTENING       7736
+  CDPSvc
+ [svchost.exe]
+  TCP    0.0.0.0:5357           0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    0.0.0.0:6000           0.0.0.0:0              LISTENING       1604
+ [XWin_MobaX.exe]
+  TCP    0.0.0.0:7680           0.0.0.0:0              LISTENING       9816
+ Can not obtain ownership information
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       832
+ [lsass.exe]
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       752
+ Can not obtain ownership information
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       1628
+  EventLog
+ [svchost.exe]
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       1216
+  Schedule
+ [svchost.exe]
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING       3780
+ [spoolsv.exe]
+  TCP    0.0.0.0:49693          0.0.0.0:0              LISTENING       824
+ Can not obtain ownership information
+  TCP    0.0.0.0:50635          0.0.0.0:0              LISTENING       10148
+ [wpscloudsvr.exe]
+  TCP    0.0.0.0:50808          0.0.0.0:0              LISTENING       17972
+ [xray.exe]
+  TCP    10.117.16.211:139      0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    10.117.16.211:52284    112.31.18.14:8899      ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:52806    223.111.245.10:443     TIME_WAIT       0
+  TCP    10.117.16.211:52909    172.67.217.50:8443     ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:52947    223.109.3.137:443      ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:53019    111.47.248.229:443     TIME_WAIT       0
+  TCP    10.117.16.211:53033    203.93.252.35:8899     TIME_WAIT       0
+  TCP    10.117.16.211:53073    203.93.252.35:8899     TIME_WAIT       0
+  TCP    10.117.16.211:53099    172.67.217.50:8443     ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:53103    172.67.217.50:8443     TIME_WAIT       0
+  TCP    10.117.16.211:53128    223.111.245.10:443     ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:53145    112.31.18.14:8899      TIME_WAIT       0
+  TCP    10.117.16.211:53170    112.31.18.14:8899      TIME_WAIT       0
+  TCP    10.117.16.211:53177    112.31.18.14:8899      TIME_WAIT       0
+  TCP    10.117.16.211:53181    172.67.217.50:8443     TIME_WAIT       0
+  TCP    10.117.16.211:53241    203.93.252.35:8899     TIME_WAIT       0
+  TCP    10.117.16.211:53244    172.67.217.50:8443     ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:53250    203.93.252.35:8899     TIME_WAIT       0
+  TCP    10.117.16.211:53254    172.67.217.50:8443     ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:53478    223.95.40.2:443        CLOSE_WAIT      10148
+ [wpscloudsvr.exe]
+  TCP    10.117.16.211:53479    115.190.127.142:443    CLOSE_WAIT      10148
+ [wpscloudsvr.exe]
+  TCP    10.117.16.211:54144    112.29.149.144:443     CLOSE_WAIT      14524
+ [wps.exe]
+  TCP    10.117.16.211:57704    112.29.149.144:443     CLOSE_WAIT      13648
+ [wpp.exe]
+  TCP    10.117.16.211:57909    112.31.18.14:8899      ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    10.117.16.211:61688    120.226.77.3:443       CLOSE_WAIT      14524
+ [wps.exe]
+  TCP    10.117.16.211:61689    120.226.77.3:443       CLOSE_WAIT      14524
+ [wps.exe]
+  TCP    10.117.16.211:61692    115.190.141.103:443    CLOSE_WAIT      14524
+ [wps.exe]
+  TCP    10.117.16.211:62284    175.27.192.139:443     ESTABLISHED     4796
+ [ToDesk.exe]
+  TCP    10.117.16.211:62394    123.249.42.199:11111   ESTABLISHED     10148
+ [wpscloudsvr.exe]
+  TCP    10.117.16.211:62668    101.126.37.72:443      CLOSE_WAIT      10148
+ [wpscloudsvr.exe]
+  TCP    10.117.16.211:62673    101.126.37.72:443      CLOSE_WAIT      10148
+ [wpscloudsvr.exe]
+  TCP    10.117.16.211:62674    101.126.37.72:443      CLOSE_WAIT      10148
+ [wpscloudsvr.exe]
+  TCP    10.117.16.211:62729    115.190.127.84:443     CLOSE_WAIT      10148
+ [wpscloudsvr.exe]
+  TCP    10.117.16.211:63550    112.31.18.14:8899      ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    10.117.16.211:63845    111.62.113.78:443      ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:63846    101.36.166.16:443      ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:63861    111.62.113.100:443     ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:64016    112.29.209.145:443     ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:64071    172.67.217.50:8443     ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    10.117.16.211:64848    112.29.149.144:443     CLOSE_WAIT      10148
+ [wpscloudsvr.exe]
+  TCP    10.117.16.211:64939    172.67.217.50:8443     TIME_WAIT       0
+  TCP    10.117.16.211:65378    4.145.79.80:443        ESTABLISHED     4864
+  WpnService
+ [svchost.exe]
+  TCP    127.0.0.1:4709         0.0.0.0:0              LISTENING       10148
+ [wpscloudsvr.exe]
+  TCP    127.0.0.1:15976        0.0.0.0:0              LISTENING       5548
+ [UapAgent.exe]
+  TCP    127.0.0.1:35600        0.0.0.0:0              LISTENING       4796
+ [ToDesk.exe]
+  TCP    127.0.0.1:35600        127.0.0.1:63080        ESTABLISHED     4796
+ [ToDesk.exe]
+  TCP    127.0.0.1:37600        0.0.0.0:0              LISTENING       8740
+ [ToDesk.exe]
+  TCP    127.0.0.1:46666        0.0.0.0:0              LISTENING       5536
+ [uSmartViewServiceAgent.exe]
+  TCP    127.0.0.1:49737        0.0.0.0:0              LISTENING       8968
+ [NVIDIA Web Helper.exe]
+  TCP    127.0.0.1:49741        127.0.0.1:62226        ESTABLISHED     11428
+ [uSmartviewUpdateUI.exe]
+  TCP    127.0.0.1:50808        127.0.0.1:52699        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:52898        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:52906        ESTABLISHED     17972
+ [xray.exe]
+  TCP    127.0.0.1:50808        127.0.0.1:52954        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:52998        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53014        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53043        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53050        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53053        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53059        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53091        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53094        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53097        ESTABLISHED     17972
+ [xray.exe]
+  TCP    127.0.0.1:50808        127.0.0.1:53101        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53115        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53126        ESTABLISHED     17972
+ [xray.exe]
+  TCP    127.0.0.1:50808        127.0.0.1:53179        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53212        TIME_WAIT       0
+  TCP    127.0.0.1:50808        127.0.0.1:53242        ESTABLISHED     17972
+ [xray.exe]
+  TCP    127.0.0.1:50808        127.0.0.1:53252        ESTABLISHED     17972
+ [xray.exe]
+  TCP    127.0.0.1:50808        127.0.0.1:63923        ESTABLISHED     17972
+ [xray.exe]
+  TCP    127.0.0.1:50808        127.0.0.1:64069        ESTABLISHED     17972
+ [xray.exe]
+  TCP    127.0.0.1:50812        0.0.0.0:0              LISTENING       17972
+ [xray.exe]
+  TCP    127.0.0.1:50812        127.0.0.1:63751        ESTABLISHED     17972
+ [xray.exe]
+  TCP    127.0.0.1:50814        0.0.0.0:0              LISTENING       15632
+ [sing-box.exe]
+  TCP    127.0.0.1:52804        127.0.0.1:50808        TIME_WAIT       0
+  TCP    127.0.0.1:52906        127.0.0.1:50808        ESTABLISHED     772
+ [chrome.exe]
+  TCP    127.0.0.1:52981        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52982        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52983        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52984        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52985        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52986        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52987        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52988        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52989        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52990        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52991        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52992        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52993        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52994        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52995        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:52996        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53001        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53002        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53003        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53004        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53005        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53006        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53007        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53008        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53009        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53010        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53011        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53012        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53013        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53015        127.0.0.1:50808        TIME_WAIT       0
+  TCP    127.0.0.1:53020        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53021        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53022        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53023        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53024        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53025        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53026        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53027        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53029        127.0.0.1:53028        TIME_WAIT       0
+  TCP    127.0.0.1:53034        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53035        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53036        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53037        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53038        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53039        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53040        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53041        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53044        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53047        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53048        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53049        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53056        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53057        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53062        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53063        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53064        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53065        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53066        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53067        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53069        127.0.0.1:53068        TIME_WAIT       0
+  TCP    127.0.0.1:53074        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53075        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53076        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53077        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53078        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53079        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53080        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53081        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53082        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53083        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53084        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53085        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53086        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53087        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53088        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53089        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53097        127.0.0.1:50808        ESTABLISHED     772
+ [chrome.exe]
+  TCP    127.0.0.1:53104        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53105        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53106        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53107        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53108        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53109        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53110        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53111        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53112        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53113        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53118        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53119        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53120        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53121        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53122        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53123        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53124        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53125        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53126        127.0.0.1:50808        ESTABLISHED     3444
+ [Feishu.exe]
+  TCP    127.0.0.1:53129        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53130        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53131        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53132        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53133        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53134        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53135        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53136        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53137        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53138        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53139        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53141        127.0.0.1:53140        TIME_WAIT       0
+  TCP    127.0.0.1:53147        127.0.0.1:53146        TIME_WAIT       0
+  TCP    127.0.0.1:53150        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53151        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53152        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53153        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53154        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53155        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53156        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53157        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53158        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53159        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53160        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53161        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53162        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53164        127.0.0.1:53163        TIME_WAIT       0
+  TCP    127.0.0.1:53166        127.0.0.1:53165        TIME_WAIT       0
+  TCP    127.0.0.1:53172        127.0.0.1:53171        TIME_WAIT       0
+  TCP    127.0.0.1:53176        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53182        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53183        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53184        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53185        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53186        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53187        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53188        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53189        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53190        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53191        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53192        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53193        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53194        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53195        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53196        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53197        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53198        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53199        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53200        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53201        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53202        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53203        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53204        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53205        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53206        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53207        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53208        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53209        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53210        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53213        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53216        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53217        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53218        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53219        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53220        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53221        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53222        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53223        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53224        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53225        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53226        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53227        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53228        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53229        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53230        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53231        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53232        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53233        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53234        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53235        127.0.0.1:3240         TIME_WAIT       0
+  TCP    127.0.0.1:53237        127.0.0.1:53236        TIME_WAIT       0
+  TCP    127.0.0.1:53242        127.0.0.1:50808        ESTABLISHED     772
+ [chrome.exe]
+  TCP    127.0.0.1:53246        127.0.0.1:53245        TIME_WAIT       0
+  TCP    127.0.0.1:53252        127.0.0.1:50808        ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    127.0.0.1:54421        0.0.0.0:0              LISTENING       17152
+ [HipsDaemon.exe]
+  TCP    127.0.0.1:56666        0.0.0.0:0              LISTENING       14004
+ [uSmartView.exe]
+  TCP    127.0.0.1:62222        0.0.0.0:0              LISTENING       5516
+ [uSmartviewUpdate.exe]
+  TCP    127.0.0.1:62226        0.0.0.0:0              LISTENING       5516
+ [uSmartviewUpdate.exe]
+  TCP    127.0.0.1:62226        127.0.0.1:49741        ESTABLISHED     5516
+ [uSmartviewUpdate.exe]
+  TCP    127.0.0.1:63080        127.0.0.1:35600        ESTABLISHED     8740
+ [ToDesk.exe]
+  TCP    127.0.0.1:63551        0.0.0.0:0              LISTENING       19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63551        127.0.0.1:63552        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63551        127.0.0.1:63553        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63551        127.0.0.1:63554        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63551        127.0.0.1:63555        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63551        127.0.0.1:63556        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63551        127.0.0.1:63557        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63551        127.0.0.1:63558        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63551        127.0.0.1:63559        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63552        127.0.0.1:63551        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63553        127.0.0.1:63551        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63554        127.0.0.1:63551        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63555        127.0.0.1:63551        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63556        127.0.0.1:63551        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63557        127.0.0.1:63551        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63558        127.0.0.1:63551        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63559        127.0.0.1:63551        ESTABLISHED     19472
+ [uSmartView_VDI_Client.exe]
+  TCP    127.0.0.1:63751        127.0.0.1:50812        ESTABLISHED     11196
+ [v2rayN.exe]
+  TCP    127.0.0.1:63923        127.0.0.1:50808        ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    127.0.0.1:64069        127.0.0.1:50808        ESTABLISHED     15632
+ [sing-box.exe]
+  TCP    127.0.0.1:64937        127.0.0.1:50808        TIME_WAIT       0
+  TCP    172.18.0.1:139         0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    172.18.0.1:49756       120.46.147.18:443      CLOSE_WAIT      14524
+ [wps.exe]
+  TCP    172.18.0.1:49766       180.184.93.15:443      CLOSE_WAIT      10148
+ [wpscloudsvr.exe]
+  TCP    172.18.0.1:49773       101.126.77.65:443      CLOSE_WAIT      13648
+ [wpp.exe]
+  TCP    172.18.0.1:52283       112.31.18.14:8899      ESTABLISHED     4912
+ [ZTEUsbIpSvc.exe]
+  TCP    172.18.0.1:52805       223.111.245.10:443     TIME_WAIT       0
+  TCP    172.18.0.1:52908       172.67.217.50:8443     ESTABLISHED     17972
+ [xray.exe]
+  TCP    172.18.0.1:52946       223.109.3.137:443      ESTABLISHED     8316
+ [Feishu.exe]
+  TCP    172.18.0.1:53017       111.47.248.229:443     TIME_WAIT       0
+  TCP    172.18.0.1:53032       203.93.252.35:8899     TIME_WAIT       0
+  TCP    172.18.0.1:53072       203.93.252.35:8899     TIME_WAIT       0
+  TCP    172.18.0.1:53098       172.67.217.50:8443     ESTABLISHED     17972
+ [xray.exe]
+  TCP    172.18.0.1:53127       223.111.245.10:443     ESTABLISHED     17972
+ [xray.exe]
+  TCP    172.18.0.1:53144       112.31.18.14:8899      TIME_WAIT       0
+  TCP    172.18.0.1:53169       112.31.18.14:8899      TIME_WAIT       0
+  TCP    172.18.0.1:53175       112.31.18.14:8899      TIME_WAIT       0
+  TCP    172.18.0.1:53240       203.93.252.35:8899     TIME_WAIT       0
+  TCP    172.18.0.1:53243       172.67.217.50:8443     ESTABLISHED     17972
+ [xray.exe]
+  TCP    172.18.0.1:53249       203.93.252.35:8899     TIME_WAIT       0
+  TCP    172.18.0.1:53251       43.128.130.45:51114    ESTABLISHED     5676
+ [RustDesk.exe]
+  TCP    172.18.0.1:53253       172.67.217.50:8443     ESTABLISHED     17972
+ [xray.exe]
+  TCP    172.18.0.1:63837       111.62.113.78:443      ESTABLISHED     12388
+ [Feishu.exe]
+  TCP    172.18.0.1:63841       101.36.166.16:443      ESTABLISHED     12388
+ [Feishu.exe]
+  TCP    172.18.0.1:63860       111.62.113.100:443     ESTABLISHED     12388
+ [Feishu.exe]
+  TCP    172.18.0.1:64015       112.29.209.145:443     ESTABLISHED     12388
+ [Feishu.exe]
+  TCP    172.18.0.1:64070       172.67.217.50:8443     ESTABLISHED     17972
+ [xray.exe]
+  TCP    172.18.0.1:64938       172.67.217.50:8443     TIME_WAIT       0
+  TCP    192.168.56.1:139       0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:135               [::]:0                 LISTENING       920
+  RpcSs
+ [svchost.exe]
+  TCP    [::]:445               [::]:0                 LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:5357              [::]:0                 LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:7680              [::]:0                 LISTENING       9816
+ Can not obtain ownership information
+  TCP    [::]:49664             [::]:0                 LISTENING       832
+ [lsass.exe]
+  TCP    [::]:49665             [::]:0                 LISTENING       752
+ Can not obtain ownership information
+  TCP    [::]:49666             [::]:0                 LISTENING       1628
+  EventLog
+ [svchost.exe]
+  TCP    [::]:49667             [::]:0                 LISTENING       1216
+  Schedule
+ [svchost.exe]
+  TCP    [::]:49668             [::]:0                 LISTENING       3780
+ [spoolsv.exe]
+  TCP    [::]:49693             [::]:0                 LISTENING       824
+ Can not obtain ownership information
+  TCP    [::]:50635             [::]:0                 LISTENING       10148
+ [wpscloudsvr.exe]
+  TCP    [::]:50808             [::]:0                 LISTENING       17972
+ [xray.exe]
+  TCP    [::1]:42050            [::]:0                 LISTENING       21628
+ [OneDrive.Sync.Service.exe]
+  TCP    [::1]:49669            [::]:0                 LISTENING       4544
+ [jhi_service.exe]
+  UDP    0.0.0.0:123            *:*                                    13132
+  W32Time
+ [svchost.exe]
+  UDP    0.0.0.0:3702           *:*                                    16176
+  FDResPub
+ [svchost.exe]
+  UDP    0.0.0.0:3702           *:*                                    16176
+  FDResPub
+ [svchost.exe]
+  UDP    0.0.0.0:5050           *:*                                    7736
+  CDPSvc
+ [svchost.exe]
+  UDP    0.0.0.0:5353           *:*                                    7708
+ [msedge.exe]
+  UDP    0.0.0.0:5353           *:*                                    7708
+ [msedge.exe]
+  UDP    0.0.0.0:5353           *:*                                    4252
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    4252
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    4252
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    7708
+ [msedge.exe]
+  UDP    0.0.0.0:5353           *:*                                    7708
+ [msedge.exe]
+  UDP    0.0.0.0:5353           *:*                                    4252
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    7708
+ [msedge.exe]
+  UDP    0.0.0.0:5353           *:*                                    7708
+ [msedge.exe]
+  UDP    0.0.0.0:5353           *:*                                    4252
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                                    2696
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:5353           *:*                                    4252
+ [chrome.exe]
+  UDP    0.0.0.0:5355           *:*                                    2696
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:21119          *:*                                    5676
+ [RustDesk.exe]
+  UDP    0.0.0.0:44411          *:*                                    19472
+ [uSmartView_VDI_Client.exe]
+  UDP    0.0.0.0:49166          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:50277          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:50299          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:50808          *:*                                    17972
+ [xray.exe]
+  UDP    0.0.0.0:52122          *:*                                    19472
+ [uSmartView_VDI_Client.exe]
+  UDP    0.0.0.0:52271          *:*                                    10148
+ [wpscloudsvr.exe]
+  UDP    0.0.0.0:52801          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:53982          *:*                                    15632
+ [sing-box.exe]
+  UDP    0.0.0.0:54168          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:54297          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:54450          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:55422          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:55970          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:56664          *:*                                    19472
+ [uSmartView_VDI_Client.exe]
+  UDP    0.0.0.0:56665          *:*                                    19472
+ [uSmartView_VDI_Client.exe]
+  UDP    0.0.0.0:56799          *:*                                    4912
+ [ZTEUsbIpSvc.exe]
+  UDP    0.0.0.0:57169          *:*                                    5676
+ [RustDesk.exe]
+  UDP    0.0.0.0:58990          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:59807          *:*                                    16176
+  FDResPub
+ [svchost.exe]
+  UDP    0.0.0.0:59936          *:*                                    15632
+ [sing-box.exe]
+  UDP    0.0.0.0:59951          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:60228          *:*                                    10148
+ [wpscloudsvr.exe]
+  UDP    0.0.0.0:61709          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:61977          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:62826          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:62923          *:*                                    10148
+ [wpscloudsvr.exe]
+  UDP    0.0.0.0:62999          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:63118          *:*                                    15632
+ [sing-box.exe]
+  UDP    0.0.0.0:64213          *:*                                    14004
+ [uSmartView.exe]
+  UDP    0.0.0.0:65152          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:65173          *:*                                    15632
+ [sing-box.exe]
+  UDP    0.0.0.0:65174          *:*                                    15632
+ [sing-box.exe]
+  UDP    0.0.0.0:65260          *:*                                    7372
+ [System]
+  UDP    0.0.0.0:65373          *:*                                    7372
+ [System]
+  UDP    10.117.16.211:137      *:*                                    4
+ Can not obtain ownership information
+  UDP    10.117.16.211:138      *:*                                    4
+ Can not obtain ownership information
+  UDP    10.117.16.211:1900     *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    10.117.16.211:59870    *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:1900         *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:10010        *:*                                    8968
+ [NVIDIA Web Helper.exe]
+  UDP    127.0.0.1:38875        *:*                                    4720
+ [QoE_Agent.exe]
+  UDP    127.0.0.1:38885        *:*                                    4720
+ [QoE_Agent.exe]
+  UDP    127.0.0.1:58365        *:*                                    8424
+ [nvcontainer.exe]
+  UDP    127.0.0.1:59871        *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:60602        *:*                                    4536
+  iphlpsvc
+ [svchost.exe]
+  UDP    127.0.0.1:62001        *:*                                    19472
+ [uSmartView_VDI_Client.exe]
+  UDP    172.18.0.1:137         *:*                                    4
+ Can not obtain ownership information
+  UDP    172.18.0.1:138         *:*                                    4
+ Can not obtain ownership information
+  UDP    172.18.0.1:1900        *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    172.18.0.1:59868       *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.56.1:137       *:*                                    4
+ Can not obtain ownership information
+  UDP    192.168.56.1:138       *:*                                    4
+ Can not obtain ownership information
+  UDP    192.168.56.1:1900      *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.56.1:59869     *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    [::]:123               *:*                                    13132
+  W32Time
+ [svchost.exe]
+  UDP    [::]:3702              *:*                                    16176
+  FDResPub
+ [svchost.exe]
+  UDP    [::]:3702              *:*                                    16176
+  FDResPub
+ [svchost.exe]
+  UDP    [::]:5353              *:*                                    7708
+ [msedge.exe]
+  UDP    [::]:5353              *:*                                    7708
+ [msedge.exe]
+  UDP    [::]:5353              *:*                                    4252
+ [chrome.exe]
+  UDP    [::]:5353              *:*                                    4252
+ [chrome.exe]
+  UDP    [::]:5353              *:*                                    4252
+ [chrome.exe]
+  UDP    [::]:5353              *:*                                    7708
+ [msedge.exe]
+  UDP    [::]:5353              *:*                                    2696
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:5355              *:*                                    2696
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:49166             *:*                                    7372
+ [System]
+  UDP    [::]:50277             *:*                                    7372
+ [System]
+  UDP    [::]:50299             *:*                                    7372
+ [System]
+  UDP    [::]:50808             *:*                                    17972
+ [xray.exe]
+  UDP    [::]:52271             *:*                                    10148
+ [wpscloudsvr.exe]
+  UDP    [::]:52801             *:*                                    7372
+ [System]
+  UDP    [::]:54168             *:*                                    7372
+ [System]
+  UDP    [::]:54297             *:*                                    7372
+ [System]
+  UDP    [::]:54450             *:*                                    7372
+ [System]
+  UDP    [::]:55422             *:*                                    7372
+ [System]
+  UDP    [::]:55970             *:*                                    7372
+ [System]
+  UDP    [::]:58990             *:*                                    7372
+ [System]
+  UDP    [::]:59808             *:*                                    16176
+  FDResPub
+ [svchost.exe]
+  UDP    [::]:59951             *:*                                    7372
+ [System]
+  UDP    [::]:60228             *:*                                    10148
+ [wpscloudsvr.exe]
+  UDP    [::]:61709             *:*                                    7372
+ [System]
+  UDP    [::]:61977             *:*                                    7372
+ [System]
+  UDP    [::]:62826             *:*                                    7372
+ [System]
+  UDP    [::]:62923             *:*                                    10148
+ [wpscloudsvr.exe]
+  UDP    [::]:62999             *:*                                    7372
+ [System]
+  UDP    [::]:65152             *:*                                    7372
+ [System]
+  UDP    [::]:65260             *:*                                    7372
+ [System]
+  UDP    [::]:65373             *:*                                    7372
+ [System]
+  UDP    [::1]:1900             *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    [::1]:59867            *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::2c4b:7f18:f801:fe91%14]:1900  *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::2c4b:7f18:f801:fe91%14]:59865  *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::8a6a:41b9:a976:4e45%9]:1900  *:*                                    10312
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::8a6a:41b9:a976:4e45%9]:59866  *:*                                    10312
+  SSDPSRV
+ [svchost.exe]

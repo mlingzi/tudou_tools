@@ -1,0 +1,171 @@
+
+Windows IP Configuration
+
+    douzi.lingzi.cf
+    ----------------------------------------
+    No records of type AAAA
+
+
+    douzi.lingzi.cf
+    ----------------------------------------
+    Record Name . . . . . : douzi.lingzi.cf
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 150190
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 43.128.130.45
+
+
+    5.5.5.223.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 5.5.5.223.in-addr.arpa
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 1382
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : public1.alidns.com
+
+
+    cdn2.lingzi.cf
+    ----------------------------------------
+    Record Name . . . . . : cdn2.lingzi.cf
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 125
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 2606:4700:3033::6815:5659
+
+
+    Record Name . . . . . : cdn2.lingzi.cf
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 125
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 2606:4700:3034::ac43:d932
+
+
+    cdn2.lingzi.cf
+    ----------------------------------------
+    Record Name . . . . . : cdn2.lingzi.cf
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 139
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.67.217.50
+
+
+    Record Name . . . . . : cdn2.lingzi.cf
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 139
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 104.21.86.89
+
+
+    desktop-pchrve5.mshome.net
+    ----------------------------------------
+    No records of type AAAA
+
+
+    desktop-pchrve5.mshome.net
+    ----------------------------------------
+    Record Name . . . . . : DESKTOP-PCHRVE5.mshome.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 150190
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 92.168.137.1
+
+
+    8.8.8.8.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 8.8.8.8.in-addr.arpa
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 6813
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : dns.google
+
+
+    45.130.128.43.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 45.130.128.43.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 150190
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : douzi.lingzi.cf
+
+
+    35.252.93.203.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 35.252.93.203.in-addr.arpa
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 21498
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : 35.252.93.203.adsl-pool.ah.cnuninet.net
+
+
+    shuc-pc-hunt.ksord.com
+    ----------------------------------------
+    Record Name . . . . . : shuc-pc-hunt.ksord.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 159
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 111.31.99.251
+
+
+    Record Name . . . . . : shuc-pc-hunt.ksord.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 159
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 111.31.99.221
+
+
+    Record Name . . . . . : shuc-pc-hunt.ksord.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 159
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 111.31.99.209
+
+
+    1.137.168.92.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 1.137.168.92.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 150190
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : DESKTOP-PCHRVE5.mshome.net
+
+
+    clouddesk.mychery.com
+    ----------------------------------------
+    Record Name . . . . . : clouddesk.mychery.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 30
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 203.93.252.35
+
+
+    Record Name . . . . . : clouddesk.mychery.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 30
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 218.22.73.117
+
+
+    Record Name . . . . . : clouddesk.mychery.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 30
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 112.31.18.14
+
+

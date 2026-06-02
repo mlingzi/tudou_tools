@@ -1,0 +1,3 @@
+ SESSIONNAME       USERNAME                 ID  STATE   TYPE        DEVICE 
+ services                                    0  Disc                        
+>console           ai                        1  Active                      

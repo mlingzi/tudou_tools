@@ -1,284 +1,284 @@
+--- START OF FILE logs.html ---
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>主机日志侦测 - 高级分析版</title>
+    <title>终端监控 - 策略配置</title>
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-icons.css') }}">
-    <style>
-        body { background-color: #f0f2f5; font-family: "Segoe UI", "PingFang SC", sans-serif;}
-        .log-container { background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 1px solid #e0e4e8; }
-        
-        /* 路径截断样式 */
-        .text-truncate-path { 
-            max-width: 180px; 
-            white-space: nowrap; 
-            overflow: hidden; 
-            text-overflow: ellipsis; 
-            display: inline-block; 
-            cursor: help;
-            vertical-align: bottom;
-        }
-        
-        .table thead th { font-weight: 600; color: #495057; background-color: #f8f9fa; white-space: nowrap; border-bottom: 2px solid #dee2e6; }
-        .table tbody td { vertical-align: middle; padding: 0.6rem 0.5rem !important; border-bottom: 1px solid #f1f3f5; }
-
-        /* 命令行/代码显示 */
-        .cmd-text { 
-            font-family: "Cascadia Code", Consolas, monospace; 
-            color: #d63384; 
-            background: #f8f9fa; 
-            padding: 2px 6px; 
-            border-radius: 4px; 
-            font-size: 11px; 
-            word-break: break-all; 
-            display: block;
-            max-width: 500px;
-            border: 1px solid #eee;
-        }
-
-        /* 下拉菜单样式 */
-        .dropdown-menu-columns { 
-            width: 350px; 
-            max-height: 550px; 
-            overflow-y: auto; 
-            font-size: 13px;
-        }
-        .dropdown-header { background: #f8f9fa; font-weight: bold; color: #000; margin-top: 10px; }
-        
-        /* 类型标签 */
-        .type-badge { font-size: 11px; font-weight: bold; padding: 2px 6px; border-radius: 4px; }
-        .tp-Process { background: #fff3cd; color: #856404; }
-        .tp-Network { background: #f8d7da; color: #721c24; }
-        .tp-DNS { background: #d1ecf1; color: #0c5460; }
-        .tp-File { background: #cce5ff; color: #004085; }
-        .tp-Registry { background: #d4edda; color: #155724; }
-    </style>
+    <style>body { background-color: #f0f2f5; font-family: "PingFang SC", sans-serif; }</style>
 </head>
 <body>
-
 <div class="container-fluid px-4 py-4">
-    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
-        <div>
-            <button class="btn btn-outline-secondary btn-sm me-3 shadow-sm" onclick="window.history.back()">
-                <i class="bi bi-arrow-left"></i> 返回
-            </button>
-            <h4 class="d-inline-block m-0 align-middle fw-bold">
-                <i class="bi bi-cpu text-primary"></i> 日志侦测 - <span id="hostTitle" class="text-primary">...</span>
-            </h4>
-        </div>
-        
-        <div class="d-flex gap-2 flex-wrap">
-            <!-- 字段动态选择器 (保留原始设计内容) -->
-            <div class="dropdown">
-                <button class="btn btn-outline-dark dropdown-toggle shadow-sm h-100" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                    <i class="bi bi-sliders"></i> 选择显示列
-                </button>
-                <ul class="dropdown-menu dropdown-menu-columns p-3 shadow" id="columnSelector">
-                    <h6 class="dropdown-header px-0">基础信息</h6>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="time_created"> 产生时间</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="event_id"> 事件ID</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="event_type"> 事件类型</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="user"> 操作用户</label></li>
-                    
-                    <h6 class="dropdown-header px-0 border-top">进程活动 (ID 1/5)</h6>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="image"> 程序路径 (Image)</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="CommandLine"> 命令行 (CommandLine)</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" value="ParentImage"> 父进程程序</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" value="ParentCommandLine"> 父进程命令行</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" value="Hashes"> 哈希 (Hashes)</label></li>
-                    
-                    <h6 class="dropdown-header px-0 border-top">网络/DNS (ID 3/22)</h6>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="DestinationIp"> 目标IP (DestIP)</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" checked value="DestinationPort"> 目标端口 (Port)</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" value="Protocol"> 协议 (Protocol)</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" value="QueryName"> 查询域名 (QueryName)</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" value="QueryResults"> DNS解析结果</label></li>
-                    
-                    <h6 class="dropdown-header px-0 border-top">文件/注册表 (ID 11/12/13)</h6>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" value="TargetFilename"> 目标文件名</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" value="TargetObject"> 注册表项路径</label></li>
-                    <li><label class="dropdown-item px-1"><input type="checkbox" value="Details"> 注册表键值详情</label></li>
-                </ul>
-            </div>
-
-            <!-- 新增：高级检索面板 -->
-            <div class="d-flex gap-2 align-items-center bg-white px-2 py-1 rounded shadow-sm border">
-                <!-- 时间范围 -->
-                <div class="input-group input-group-sm" style="width: 320px;">
-                    <span class="input-group-text bg-light text-secondary"><i class="bi bi-clock"></i></span>
-                    <input type="datetime-local" id="filterStart" class="form-control text-center" title="开始时间">
-                    <span class="input-group-text bg-light px-1">-</span>
-                    <input type="datetime-local" id="filterEnd" class="form-control text-center" title="结束时间">
-                </div>
-
-                <!-- Event ID 下拉筛选 -->
-                <select id="filterEventId" class="form-select form-select-sm" style="width: 140px;">
-                    <option value="">所有行为</option>
-                    <option value="1">进程启动 (1)</option>
-                    <option value="3">网络连接 (3)</option>
-                    <option value="5">进程终止 (5)</option>
-                    <option value="11">文件创建 (11)</option>
-                    <option value="12">注册表修改(12/13)</option>
-                    <option value="22">DNS解析 (22)</option>
-                </select>
-
-                <!-- 精确检索框 -->
-                <div class="input-group input-group-sm" style="width: 240px;">
-                    <input type="text" id="logSearch" class="form-control" placeholder="IP / 路径 / 命令行..." onkeypress="if(event.key==='Enter') searchLogs()">
-                    <button class="btn btn-primary px-3" onclick="searchLogs()"><i class="bi bi-search"></i></button>
-                </div>
-            </div>
-
-            <!-- 刷新按钮 -->
-            <button class="btn btn-light border shadow-sm h-100" onclick="loadLogs()" title="刷新"><i class="bi bi-arrow-clockwise"></i></button>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="fw-bold"><i class="bi bi-pc-display-horizontal text-primary"></i> 终端主机看板</h4>
+        <div class="d-flex gap-2">
+            <a href="/" class="btn btn-outline-dark"><i class="bi bi-shield-check"></i> 返回工单</a>
+            <!-- 增加日志清理按钮 -->
+            <button class="btn btn-outline-danger" onclick="openClearLogsModal()"><i class="bi bi-trash"></i> 数据清理</button>
+            <button class="btn btn-primary" onclick="loadHosts()"><i class="bi bi-arrow-clockwise"></i> 刷新</button>
         </div>
     </div>
+    <div class="table-responsive bg-white rounded shadow-sm border">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light"><tr><th class="ps-4">主机名</th><th>IP</th><th>状态</th><th class="text-end pe-4">管理</th></tr></thead>
+            <tbody id="hostTableBody"></tbody>
+        </table>
+    </div>
+</div>
 
-    <div class="log-container p-3">
-        <div class="table-responsive" style="min-height: 60vh;">
-			<table class="table table-hover table-sm" id="dynamicLogTable">
-				<thead>
-					<tr id="tableHeaderRow"></tr>
-				</thead>
-				<tbody id="logTableBody"></tbody>
-			</table>
+<!-- ================== 日志清理弹窗 ================== -->
+<div class="modal fade" id="clearLogsModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content shadow">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title"><i class="bi bi-trash3-fill"></i> 空间与日志清理</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">选择清理范围</label>
+                    <select class="form-select" id="clearHostSelect">
+                        <option value="">🎯 全部主机 (全局清理)</option>
+                        <!-- 动态填充主机 -->
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label fw-bold">日志保留策略</label>
+                    <select class="form-select" id="clearDaysSelect">
+                        <option value="0" class="text-danger fw-bold">⚠️ 不保留 (清空所选范围全部日志)</option>
+                        <option value="7">保留最近 7 天数据</option>
+                        <option value="30" selected>保留最近 30 天数据</option>
+                        <option value="90">保留最近 90 天数据</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-danger px-4" onclick="executeClearLogs()">确认彻底清理</button>
+            </div>
         </div>
-        
-        <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
-            <div class="text-muted small">共 <span id="totalRecords">0</span> 条记录</div>
-            <nav>
-                <ul class="pagination pagination-sm m-0 shadow-sm">
-                    <li class="page-item"><button class="page-link" onclick="changePage(-1)">上一页</button></li>
-                    <li class="page-item disabled"><a class="page-link" href="#"><span id="currentPageLabel">1</span> / <span id="totalPagesLabel">1</span></a></li>
-                    <li class="page-item"><button class="page-link" onclick="changePage(1)">下一页</button></li>
-                </ul>
-            </nav>
+    </div>
+</div>
+
+<!-- ================== 配置下发弹窗 (专业版) ================== -->
+<div class="modal fade" id="configModal" tabindex="-1">
+    <div class="modal-dialog modal-lg"> <!-- 加宽弹窗 -->
+        <div class="modal-content shadow">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title"><i class="bi bi-shield-fill-plus"></i> 配置终端防御抓取策略</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="alert alert-info py-2 small mb-3">
+                    <i class="bi bi-info-circle"></i> 提示：勾选 ID 后，客户端将实时采集该类型的原始日志。采集量大的 ID（如 ID 7）请谨慎开启。
+                </div>
+                
+                <h6 class="fw-bold text-primary mb-3">目标主机: <span id="configHostName" class="text-dark"></span></h6>
+
+                <div class="row">
+                    <!-- 核心监控组 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 bg-light-subtle">
+                            <div class="card-header py-1 fw-bold bg-warning-subtle text-warning-emphasis">核心/进程审计</div>
+                            <div class="card-body p-2">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input ev-id" type="checkbox" value="1" id="i1">
+                                    <label class="form-check-label fw-bold" for="i1">进程创建 (ID 1)</label>
+                                    <div class="small text-muted">监控程序启动、命令行参数、父进程关系。</div>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input ev-id" type="checkbox" value="5" id="i5">
+                                    <label class="form-check-label fw-bold" for="i5">进程终止 (ID 5)</label>
+                                    <div class="small text-muted">记录程序何时结束。</div>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input ev-id" type="checkbox" value="25" id="i25">
+                                    <label class="form-check-label fw-bold" for="i25">进程篡改 (ID 25)</label>
+                                    <div class="small text-muted">监控“进程镂空”等高级内存劫持行为。</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 内存与攻击发现组 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 border-danger">
+                            <div class="card-header py-1 fw-bold bg-danger text-white">内存注入(高级威胁)</div>
+                            <div class="card-body p-2">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input ev-id" type="checkbox" value="8" id="i8">
+                                    <label class="form-check-label fw-bold text-danger" for="i8">远程线程创建 (ID 8)</label>
+                                    <div class="small text-muted">监控代码注入（如 CobaltStrike 注入到 lsass）。</div>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input ev-id" type="checkbox" value="10" id="i10">
+                                    <label class="form-check-label fw-bold text-danger" for="i10">进程访问 (ID 10)</label>
+                                    <div class="small text-muted">监控读取内存（如 Mimikatz 读取密码）。</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 网络与域名组 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 border-info">
+                            <div class="card-header py-1 fw-bold bg-info-subtle">网络通信</div>
+                            <div class="card-body p-2">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input ev-id" type="checkbox" value="3" id="i3">
+                                    <label class="form-check-label fw-bold" for="i3">TCP/UDP 连接 (ID 3)</label>
+                                    <div class="small text-muted">监控外联 IP、端口、目的地域名。</div>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input ev-id" type="checkbox" value="22" id="i22">
+                                    <label class="form-check-label fw-bold" for="i22">DNS 查询 (ID 22)</label>
+                                    <div class="small text-muted">发现域名隧道、C2 上线、DGA 随机域名。</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 文件与痕迹组 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 border-success">
+                            <div class="card-header py-1 fw-bold bg-success-subtle">文件/注册表痕迹</div>
+                            <div class="card-body p-2">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input ev-id" type="checkbox" value="11" id="i11">
+                                    <label class="form-check-label fw-bold" for="i11">文件创建 (ID 11)</label>
+                                    <div class="small text-muted">监控病毒落盘。</div>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input ev-id" type="checkbox" value="23" id="i23">
+                                    <label class="form-check-label fw-bold" for="i23">文件删除 (ID 23)</label>
+                                    <div class="small text-muted">监控黑客清理作案工具。</div>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input ev-id" type="checkbox" value="12" id="i12">
+                                    <label class="form-check-label fw-bold" for="i12">注册表修改 (ID 12/13)</label>
+                                    <div class="small text-muted">监控自启动项、禁用防火墙等行为。</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 高级审计组 -->
+                    <div class="col-md-12">
+                        <div class="card bg-dark-subtle">
+                            <div class="card-header py-1 fw-bold">高级/后渗透行为</div>
+                            <div class="card-body p-2 d-flex flex-wrap gap-4">
+                                <div class="form-check">
+                                    <input class="form-check-input ev-id" type="checkbox" value="17" id="i17">
+                                    <label class="form-check-label fw-bold" for="i17">命名管道 (ID 17/18)</label>
+                                    <div class="small text-muted">发现木马内部通信（如 CS）。</div>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input ev-id" type="checkbox" value="19" id="i19">
+                                    <label class="form-check-label fw-bold" for="i19">WMI 活动 (ID 19-21)</label>
+                                    <div class="small text-muted">监控基于 WMI 的持久化后门。</div>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input ev-id" type="checkbox" value="24" id="i24">
+                                    <label class="form-check-label fw-bold" for="i24">剪贴板监控 (ID 24)</label>
+                                    <div class="small text-muted">发现攻击者窃取密码或敏感数据。</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary px-5" onclick="saveConfig()">保存并立即生效</button>
+            </div>
         </div>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-const urlParams = new URLSearchParams(window.location.search);
-const currentHost = urlParams.get('hostname');
-document.getElementById('hostTitle').innerText = currentHost || '未知主机';
+let currentConfigHost = '';
+let configModalInstance = null;
+let clearLogsModalInst = null;
 
-// 补全所有核心字段映射 (保留原版内容)
-const COLUMN_MAP = {
-    time_created: "产生时间",
-    event_id: "ID",
-    event_type: "事件类型",
-    user: "用户",
-    image: "执行程序 (Image)",
-    CommandLine: "命令行 (CommandLine)",
-    ParentImage: "父进程",
-    ParentCommandLine: "父进程命令行",
-    DestinationIp: "目标IP",
-    DestinationPort: "端口",
-    Protocol: "协议",
-    QueryName: "域名 (DNS)",
-    QueryResults: "解析结果",
-    TargetFilename: "文件路径",
-    TargetObject: "注册表路径",
-    Details: "数据详情",
-    Hashes: "SHA256哈希"
-};
+document.addEventListener('DOMContentLoaded', () => {
+    configModalInstance = new bootstrap.Modal(document.getElementById('configModal'));
+    clearLogsModalInst = new bootstrap.Modal(document.getElementById('clearLogsModal'));
+    loadHosts();
+});
 
-let currentPage = 1, pageSize = 100, totalPages = 1;
-
-function getActiveColumns() {
-    return Array.from(document.querySelectorAll('#columnSelector input:checked')).map(cb => cb.value);
+function loadHosts() {
+    fetch('/api/web/hosts').then(res => res.json()).then(res => {
+        const tbody = document.getElementById('hostTableBody');
+        tbody.innerHTML = res.data.map(h => `
+            <tr>
+                <td class="ps-4 fw-bold">${h.hostname}</td>
+                <td>${h.ip}</td>
+                <td><span class="badge ${h.status==='在线'?'bg-success':'bg-secondary'}">${h.status}</span></td>
+                <td class="text-end pe-4">
+                    <button class="btn btn-sm btn-outline-primary" onclick="location.href='/host_logs?hostname=${h.hostname}'">日志</button>
+                    <button class="btn btn-sm btn-outline-warning" onclick="openConfig('${h.hostname}')">配置</button>
+                    <button class="btn btn-sm btn-outline-danger" onclick="sendCommand('${h.hostname}','uninstall')">卸载</button>
+                </td>
+            </tr>`).join('');
+    });
 }
 
-function loadLogs() {
-    if (!currentHost) return;
-    
-    // --- 新增：获取高级过滤参数 ---
-    const kw = document.getElementById('logSearch').value.trim();
-    const evId = document.getElementById('filterEventId').value;
-    
-    // 转换日期格式 (将 HTML 的 2024-05-01T12:00 转为后端数据库需要的 2024-05-01 12:00:00)
-    let start = document.getElementById('filterStart').value;
-    let end = document.getElementById('filterEnd').value;
-    if(start) start = start.replace('T', ' ') + ":00";
-    if(end) end = end.replace('T', ' ') + ":59";
-
-    const activeCols = getActiveColumns();
-    const tbody = document.getElementById('logTableBody');
-    const theadRow = document.getElementById('tableHeaderRow');
-
-    // 渲染表头并添加 Loading 动画
-    theadRow.innerHTML = activeCols.map(col => `<th>${COLUMN_MAP[col] || col}</th>`).join('');
-    tbody.innerHTML = `
-        <tr>
-            <td colspan="${activeCols.length}" class="text-center py-5">
-                <div class="spinner-border text-primary spinner-border-sm" role="status"></div>
-                <span class="text-muted ms-2 align-middle">正在引擎中极速检索...</span>
-            </td>
-        </tr>`;
-
-    // --- 新增：动态拼接 GET 请求参数 ---
-    let api = `/api/web/logs?hostname=${encodeURIComponent(currentHost)}&page=${currentPage}&limit=${pageSize}`;
-    if (kw) api += `&keyword=${encodeURIComponent(kw)}`;
-    if (evId) api += `&event_id=${evId}`;
-    if (start) api += `&start_time=${encodeURIComponent(start)}`;
-    if (end) api += `&end_time=${encodeURIComponent(end)}`;
-
-    fetch(api)
-        .then(res => res.json())
-        .then(res => {
-            tbody.innerHTML = '';
-            document.getElementById('totalRecords').innerText = res.total;
-            totalPages = Math.ceil(res.total / pageSize) || 1;
-            document.getElementById('currentPageLabel').innerText = currentPage;
-            document.getElementById('totalPagesLabel').innerText = totalPages;
-
-            if (res.data.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="${activeCols.length}" class="text-center py-4 text-muted">未检索到匹配的日志</td></tr>`;
-                return;
-            }
-
-            res.data.forEach(l => {
-                let details = {};
-                try { details = JSON.parse(l.details_json || '{}'); } catch(e) {}
-
-                const tr = document.createElement('tr');
-                activeCols.forEach(col => {
-                    const td = document.createElement('td');
-                    // 逻辑：数据库列没有则去 details_json 原始字段里找
-                    let val = l[col] || details[col] || '-';
-
-                    // 美化特定字段 (保留原版显示逻辑)
-                    if (col === 'event_type') {
-                        td.innerHTML = `<span class="type-badge tp-${val}">${val}</span>`;
-                    } else if (col === 'event_id') {
-                        td.innerHTML = `<span class="badge bg-secondary">#${val}</span>`;
-                    } else if (['CommandLine', 'ParentCommandLine', 'QueryResults', 'Details'].includes(col)) {
-                        td.innerHTML = val !== '-' ? `<code class="cmd-text">${val}</code>` : '-';
-                    } else if (['image', 'ParentImage', 'TargetFilename', 'TargetObject', 'Hashes'].includes(col)) {
-                        const short = val.split('\\').pop();
-                        td.innerHTML = `<span class="text-truncate-path" title="${val}">${short}</span>`;
-                    } else {
-                        td.innerText = val;
-                    }
-                    tr.appendChild(td);
-                });
-                tbody.appendChild(tr);
-            });
-        })
-        .catch(err => {
-            tbody.innerHTML = `<tr><td colspan="${activeCols.length}" class="text-center py-4 text-danger"><i class="bi bi-x-circle"></i> 请求发生错误：${err}</td></tr>`;
-        });
+function openConfig(h) {
+    currentConfigHost = h;
+    document.getElementById('configHostName').innerText = h;
+    fetch(`/api/web/config?hostname=${encodeURIComponent(h)}`).then(res => res.json()).then(res => {
+        const ids = res.data.event_ids.split(',');
+        document.querySelectorAll('.ev-id').forEach(cb => cb.checked = ids.includes(cb.value));
+        configModalInstance.show();
+    });
 }
 
-document.getElementById('columnSelector').addEventListener('change', loadLogs);
-// 切换过滤条件时，重置页码
-function searchLogs() { currentPage = 1; loadLogs(); }
-function changePage(d) { let n = currentPage + d; if (n > 0 && n <= totalPages) { currentPage = n; loadLogs(); } }
+function saveConfig() {
+    const ids = Array.from(document.querySelectorAll('.ev-id:checked')).map(cb => cb.value).join(',');
+    fetch(`/api/web/config?hostname=${encodeURIComponent(currentConfigHost)}`, {
+        method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({event_ids: ids})
+    }).then(() => { configModalInstance.hide(); alert('策略已下发'); });
+}
 
-// 页面加载完毕后自动拉取数据
-loadLogs();
+function sendCommand(h, cmd) {
+    if(!confirm('确定执行此操作？')) return;
+    fetch('/api/web/command', {
+        method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({hostname: h, command: cmd})
+    }).then(() => alert('指令已发送'));
+}
+
+function openClearLogsModal() {
+    const sel = document.getElementById('clearHostSelect');
+    sel.innerHTML = '<option value="">🎯 全部主机 (全局清理)</option>';
+    Array.from(document.querySelectorAll('#hostTableBody tr td:first-child')).forEach(td => {
+        const h = td.innerText;
+        sel.innerHTML += `<option value="${h}">🖥️ ${h}</option>`;
+    });
+    clearLogsModalInst.show();
+}
+
+function executeClearLogs() {
+    const h = document.getElementById('clearHostSelect').value;
+    const d = document.getElementById('clearDaysSelect').value;
+    if(!confirm('该操作将从数据库中永久删除底层日志数据，无法恢复！确认执行？')) return;
+    
+    fetch('/api/web/logs/clear', {
+        method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({hostname: h, days: parseInt(d)})
+    }).then(r=>r.json()).then(res=>{
+        if(res.status === 'success') {
+            alert(`清理成功！共删除了 ${res.count} 条冗余日志记录。`);
+            clearLogsModalInst.hide();
+        } else {
+            alert(`清理失败: ${res.message}`);
+        }
+    });
+}
 </script>
 </body>
 </html>
